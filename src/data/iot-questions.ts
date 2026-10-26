@@ -231,7 +231,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 20,
   "week": 2,
-  "question": "State True or False. In CoAP, a piggyback response is carried with the acknowledgment, whereas in the separate mode, the server response is sent in a message separate from the acknowledgment.",
+  "question": "State True or False.\n\nIn CoAP, a piggyback response is carried with the acknowledgment, whereas in the separate mode, the server response is sent in a message separate from the acknowledgment.",
   "options": [
    "True",
    "False"
@@ -243,12 +243,12 @@ export const iotQuestions: Question[] = [
   "week": 2,
   "question": "Which of the following CoAP request-method mappings are correct?",
   "options": [
-   "GET - retrieve data",
-   "PUT - create data",
-   "PUSH - update data",
-   "DELETE - delete data"
+   "GET — retrieve data",
+   "PUT — create data",
+   "PUSH — update data",
+   "DELETE — delete data"
   ],
-  "answer": "DELETE - delete data||GET - retrieve data||PUSH - update data||PUT - create data",
+  "answer": "DELETE — delete data||GET — retrieve data||PUSH — update data||PUT — create data",
   "multi": true
  },
  {
@@ -281,12 +281,12 @@ export const iotQuestions: Question[] = [
   "week": 2,
   "question": "Which of the following IEEE 802.15.4 variant-application pairs are correct?",
   "options": [
-   "IEEE 802.15.4c - China",
-   "IEEE 802.15.4e - Industrial applications",
-   "IEEE 802.15.4f - Active RFID",
-   "IEEE 802.15.4g - Smart utility networks"
+   "IEEE 802.15.4c — China",
+   "IEEE 802.15.4e — Industrial applications",
+   "IEEE 802.15.4f — Active RFID",
+   "IEEE 802.15.4g — Smart utility networks"
   ],
-  "answer": "IEEE 802.15.4c - China||IEEE 802.15.4e - Industrial applications||IEEE 802.15.4f - Active RFID||IEEE 802.15.4g - Smart utility networks",
+  "answer": "IEEE 802.15.4c — China||IEEE 802.15.4e — Industrial applications||IEEE 802.15.4f — Active RFID||IEEE 802.15.4g — Smart utility networks",
   "multi": true
  },
  {
@@ -341,7 +341,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 29,
   "week": 2,
-  "question": "State True or False. In LOADng routing, an intermediate router may respond to a Route Request (RREQ) whenever it already has an active route to the requested destination.",
+  "question": "State True or False.\n\nIn LOADng routing, an intermediate router may respond to a Route Request (RREQ) whenever it already has an active route to the requested destination.",
   "options": [
    "True",
    "False"
