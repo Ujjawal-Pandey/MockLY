@@ -1986,3 +1986,133 @@ Correct answer: (a) Devices can exchange data without direct human control.
 All 15 questions for **Week 4: Assignment 4** have been updated in [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 46–60). All single and multiple-select options have been verified and configured for instant feedback, grading, and testing.
 
 ---
+
+## 👤 User
+
+Week 5: Assignment 5 — All Questions, Options & Answers
+
+Question 1
+What does interoperability allow IoT devices to do?
+a. Communicate and exchange data
+b. Work only offline
+c. Use only one protocol
+d. Disable other devices
+Correct answer: (a) Communicate and exchange data
+
+Question 2
+Syntactic interoperability deals with:
+a. Message format
+b. Battery size
+c. Device colour
+d. Sensor weight
+Correct answer: (a) Message format
+
+Question 3
+What does UMB stand for?
+a. Universal Middleware Bridge
+b. Unified Mobile Board
+c. Universal Memory Block
+d. User Management Bridge
+Correct answer: (a) Universal Middleware Bridge
+
+Question 4
+What is the operating voltage of the Arduino UNO?
+a. 3.3 V
+b. 5 V
+c. 9 V
+d. 12 V
+Correct answer: (b) 5 V
+
+Question 5
+What is a program written in the Arduino IDE called?
+a. Packet
+b. Sketch
+c. Frame
+d. Query
+Correct answer: (b) Sketch
+
+Question 6
+Which interface is mainly used to connect an Arduino UNO to a computer?
+a. HDMI
+b. USB
+c. VGA
+d. Ethernet
+Correct answer: (b) USB
+
+Question 7
+What is the conventional starting index of an array in Arduino programming?
+a. -1
+b. 0
+c. 1
+d. 2
+Correct answer: (b) 0
+
+Question 8
+Which Arduino function is used to generate a pseudo-random number within a specified range?
+a. random()
+b. pinMode()
+c. digitalWrite()
+d. attachInterrupt()
+Correct answer: (a) random()
+
+Question 9
+In the traffic-control example, which LED is switched ON first to represent the GO signal?
+a. Red LED
+b. Yellow LED
+c. Green LED
+d. All three LEDs simultaneously
+Correct answer: (c) Green LED
+
+Question 10
+Which quantities are measured by a DHT sensor?
+a. Temperature and humidity
+b. Distance and speed
+c. Light and sound
+d. Pressure and altitude
+Correct answer: (a) Temperature and humidity
+
+Question 11
+What does a sensor convert a physical quantity into?
+a. A software program
+b. Mechanical motion
+c. A network address
+d. An electrical signal
+Correct answer: (d) An electrical signal
+
+Question 12
+In the DHT sensor sketch, delay(2000) causes successive readings to be printed after approximately how much time?
+a. 0.2 seconds
+b. 1 second
+c. 2 seconds
+d. 20 seconds
+Correct answer: (c) 2 seconds
+
+Question 13
+State whether the following statement is True or False.
+Statement: A servo motor is a low-precision motor used only for linear motion.
+a. True
+b. False
+Correct answer: (b) False
+
+Question 14
+Which device provides controlled rotary motion?
+a. Ultrasonic sensor
+b. DHT sensor
+c. PIR sensor
+d. Servo motor
+Correct answer: (d) Servo motor
+
+Question 15
+State whether the following statement is True or False.
+Statement: A stepper motor is a type of actuator.
+a. True
+b. False
+Correct answer: (a) True
+
+---
+
+## 🤖 Assistant
+
+All 15 questions for **Week 5: Assignment 5** have been updated in [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 61–75). All single-choice and True/False questions are properly configured for testing and instant feedback.
+
+---

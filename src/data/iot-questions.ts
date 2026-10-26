@@ -726,80 +726,86 @@ export const iotQuestions: Question[] = [
  {
   "id": 61,
   "week": 5,
-  "question": "Which statement best describes Interoperability in IoT?",
+  "question": "What does interoperability allow IoT devices to do?",
   "options": [
-   "Ability of devices from different manufacturers to communicate without human intervention",
-   "Using only one programming language for all IoT devices",
-   "Storing all IoT data on a single local server",
-   "Standardizing hardware sizes for all IoT components"
+   "Communicate and exchange data",
+   "Work only offline",
+   "Use only one protocol",
+   "Disable other devices"
   ],
-  "answer": "Ability of devices from different manufacturers to communicate without human intervention"
+  "answer": "Communicate and exchange data"
  },
  {
   "id": 62,
   "week": 5,
-  "question": "Which layer in the Cross-Domain IoT Architecture enables communication between edge nodes and local gateways?",
+  "question": "Syntactic interoperability deals with:",
   "options": [
-   "Local Communications Layer",
-   "Application Layer",
-   "User Layer",
-   "Device Layer"
+   "Message format",
+   "Battery size",
+   "Device colour",
+   "Sensor weight"
   ],
-  "answer": "Local Communications Layer"
+  "answer": "Message format"
  },
  {
   "id": 63,
   "week": 5,
-  "question": "What is the primary purpose of the setup() function in an Arduino sketch?",
+  "question": "What does UMB stand for?",
   "options": [
-   "To continuously repeat code",
-   "To initialize variables, pin modes, and libraries",
-   "To turn off the Arduino board",
-   "To send data to the cloud"
+   "Universal Middleware Bridge",
+   "Unified Mobile Board",
+   "Universal Memory Block",
+   "User Management Bridge"
   ],
-  "answer": "To initialize variables, pin modes, and libraries"
+  "answer": "Universal Middleware Bridge"
  },
  {
   "id": 64,
   "week": 5,
-  "question": "Which Arduino function pauses the program for a specified amount of time in milliseconds?",
+  "question": "What is the operating voltage of the Arduino UNO?",
   "options": [
-   "wait()",
-   "pause()",
-   "delay()",
-   "sleep()"
+   "3.3 V",
+   "5 V",
+   "9 V",
+   "12 V"
   ],
-  "answer": "delay()"
+  "answer": "5 V"
  },
  {
   "id": 65,
   "week": 5,
-  "question": "State whether the following statement is True or False: In Arduino, digitalRead() is used to configure a pin as an input or output.",
+  "question": "What is a program written in the Arduino IDE called?",
   "options": [
-   "True",
-   "False"
+   "Packet",
+   "Sketch",
+   "Frame",
+   "Query"
   ],
-  "answer": "False"
+  "answer": "Sketch"
  },
  {
   "id": 66,
   "week": 5,
-  "question": "State whether the following statement is True or False: Interoperability in IoT is needed only at the hardware level.",
+  "question": "Which interface is mainly used to connect an Arduino UNO to a computer?",
   "options": [
-   "True",
-   "False"
+   "HDMI",
+   "USB",
+   "VGA",
+   "Ethernet"
   ],
-  "answer": "False"
+  "answer": "USB"
  },
  {
   "id": 67,
   "week": 5,
-  "question": "State whether the following statement is True or False: The loop() function in an Arduino sketch executes only once when the board powers up.",
+  "question": "What is the conventional starting index of an array in Arduino programming?",
   "options": [
-   "True",
-   "False"
+   "-1",
+   "0",
+   "1",
+   "2"
   ],
-  "answer": "False"
+  "answer": "0"
  },
  {
   "id": 68,
