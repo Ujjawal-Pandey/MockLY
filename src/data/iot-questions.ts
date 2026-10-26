@@ -64,7 +64,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 6,
   "week": 1,
-  "question": "In an IoT network configuration, local addresses may be valid only within a gateway’s domain. The same local address may even appear under another gateway. The main advantage of this strategy is:",
+  "question": "In an IoT network configuration, local addresses may be valid only within a gateway's domain. The same local address may even appear under another gateway. The main advantage of this strategy is:",
   "options": [
    "It increases unnecessary address consumption",
    "It helps conserve address space",
@@ -1270,7 +1270,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 107,
   "week": 8,
-  "question": "In the ODIN architecture for software-defined wireless networks, what does the “Odin agent” do?",
+  "question": "In the ODIN architecture for software-defined wireless networks, what does the \"Odin agent\" do?",
   "options": [
    "It is placed at the controller end to manage policies",
    "It replaces the OpenFlow protocol entirely",
@@ -1378,7 +1378,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 116,
   "week": 8,
-  "question": "Which cloud service model is described as “application middleware offered as a service to developers,” removing the need to manage underlying hardware and operating systems?",
+  "question": "Which cloud service model is described as \"application middleware offered as a service to developers,\" removing the need to manage underlying hardware and operating systems?",
   "options": [
    "IaaS",
    "SaaS",
@@ -1402,7 +1402,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 118,
   "week": 8,
-  "question": "In cloud service accounting and billing, what does “service accounting” primarily aim to obtain?",
+  "question": "In cloud service accounting and billing, what does \"service accounting\" primarily aim to obtain?",
   "options": [
    "Resource-usage information, typically in the form of records",
    "The physical address of end-users",
@@ -1476,12 +1476,12 @@ export const iotQuestions: Question[] = [
   "week": 9,
   "question": "Which script/tool is used in the lecture to install OpenStack, requiring local.conf to be configured with passwords and HOST_IP before running?",
   "options": [
-   "`stack.sh` via DevStack",
+   "stack.sh via DevStack",
    "docker-compose",
    "kubeadm",
    "ansible-playbook"
   ],
-  "answer": "`stack.sh` via DevStack"
+  "answer": "stack.sh via DevStack"
  },
  {
   "id": 125,
@@ -1570,7 +1570,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 132,
   "week": 9,
-  "question": "Which company is credited with coining the term “fog computing”?",
+  "question": "Which company is credited with coining the term \"fog computing\"?",
   "options": [
    "Google",
    "Amazon",
@@ -1618,7 +1618,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 136,
   "week": 10,
-  "question": "In the analogy comparing humans to smart cities presented in the lecture, what do “Sensors and Tags” correspond to?",
+  "question": "In the analogy comparing humans to smart cities presented in the lecture, what do \"Sensors and Tags\" correspond to?",
   "options": [
    "Skeleton",
    "Nerves",
@@ -1630,7 +1630,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 137,
   "week": 10,
-  "question": "Which of the following is listed as one of the six “Application Focus Areas” of a smart city?",
+  "question": "Which of the following is listed as one of the six \"Application Focus Areas\" of a smart city?",
   "options": [
    "Smart Economy",
    "Smart Bandwidth",
@@ -1642,7 +1642,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 138,
   "week": 10,
-  "question": "Under “Current Focus Areas” of smart cities, which application deals with automatically routing vehicles to empty slots and detecting vacant slots?",
+  "question": "Under \"Current Focus Areas\" of smart cities, which application deals with automatically routing vehicles to empty slots and detecting vacant slots?",
   "options": [
    "Smart Homes",
    "Smart Energy",
