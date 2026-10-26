@@ -363,98 +363,102 @@ export const iotQuestions: Question[] = [
  {
   "id": 31,
   "week": 3,
-  "question": "Which layer of the Wireless HART protocol stack uses time-synchronized communication?",
+  "question": "Which WirelessHART data-link mechanism provides reliable, collision-free, and deterministic communication?",
   "options": [
-   "Physical layer",
-   "Data link layer",
-   "Network layer",
-   "Application layer"
+   "Superframes divided into 10-millisecond TDMA time slots",
+   "Pure ALOHA without time-slot allocation",
+   "CSMA/CD over a wired Ethernet bus",
+   "Token-ring circulation among field devices"
   ],
-  "answer": "Physical layer"
+  "answer": "Superframes divided into 10-millisecond TDMA time slots"
  },
  {
   "id": 32,
   "week": 3,
-  "question": "In Wireless HART, what is the primary purpose of time-slotted communication?",
+  "question": "In WirelessHART, which entity supervises network nodes and guides them regarding when and where packets should be transmitted?",
   "options": [
-   "To ensure collision-free communication",
-   "To increase the frequency of data transmission",
-   "To increase payload size",
-   "To simplify routing tables"
-  ],
-  "answer": "To ensure collision-free communication"
- },
- {
-  "id": 33,
-  "week": 3,
-  "question": "Which component in Wireless HART is responsible for creating and maintaining the mesh network layout?",
-  "options": [
-   "Handheld device",
    "Network manager",
-   "Security manager",
-   "Field device"
+   "NFC reader",
+   "Z-Wave end device",
+   "Bluetooth inquiry agent"
   ],
   "answer": "Network manager"
  },
  {
+  "id": 33,
+  "week": 3,
+  "question": "Which of the following are operating modes of NFC?",
+  "options": [
+   "Peer-to-peer mode",
+   "Read/write mode",
+   "Card-emulation mode",
+   "Frequency-hopping mode"
+  ],
+  "answer": "Card-emulation mode||Peer-to-peer mode||Read/write mode",
+  "multi": true
+ },
+ {
   "id": 34,
   "week": 3,
-  "question": "Which topology is supported by Wireless HART?",
+  "question": "Which of the following are phases of Bluetooth connection establishment?",
   "options": [
-   "Star topology only",
-   "Mesh topology only",
-   "Both Star and Mesh topology",
-   "Ring topology only"
+   "Inquiry or discovery phase",
+   "Paging phase",
+   "Connection phase",
+   "Channel-blacklisting phase"
   ],
-  "answer": "Both Star and Mesh topology"
+  "answer": "Connection phase||Inquiry or discovery phase||Paging phase",
+  "multi": true
  },
  {
   "id": 35,
   "week": 3,
-  "question": "In Wireless HART, channel hopping is primarily used to:",
+  "question": "In which Bluetooth operating mode does a slave remain inactive until the master instructs it to wake up?",
   "options": [
-   "Increase bandwidth",
-   "Avoid interference and fading",
-   "Reduce payload size",
-   "Synchronize clocks"
+   "Active mode",
+   "Sniff mode",
+   "Hold mode",
+   "Park mode"
   ],
-  "answer": "Avoid interference and fading"
+  "answer": "Park mode"
  },
  {
   "id": 36,
   "week": 3,
-  "question": "What frequency band does Wireless HART operate on?",
+  "question": "Which of the following functions are provided by the Bluetooth L2CAP layer?",
   "options": [
-   "2.4 GHz ISM band",
-   "5 GHz ISM band",
-   "868 MHz band",
-   "915 MHz band"
+   "Connection-oriented and connectionless data services",
+   "Protocol multiplexing",
+   "Segmentation and reassembly",
+   "Generation of the magnetic field used by NFC tags"
   ],
-  "answer": "2.4 GHz ISM band"
+  "answer": "Connection-oriented and connectionless data services||Protocol multiplexing||Segmentation and reassembly",
+  "multi": true
  },
  {
   "id": 37,
   "week": 3,
-  "question": "Which of the following device types acts as a gateway between Wireless HART devices and host applications?",
+  "question": "A single Z-Wave network can contain up to approximately how many nodes?",
   "options": [
-   "Handheld",
-   "Adapter",
-   "Gateway",
-   "Router"
+   "32",
+   "64",
+   "128",
+   "232"
   ],
-  "answer": "Gateway"
+  "answer": "232"
  },
  {
   "id": 38,
   "week": 3,
-  "question": "In ISA100.11a, which sublayer provides transport layer services such as segmentation and reassembly?",
+  "question": "Which of the following statements about Z-Wave addressing are correct?",
   "options": [
-   "IEEE 802.15.4 MAC",
-   "6LoWPAN",
-   "Transport layer",
-   "Upper application sublayer"
+   "Each logical Z-Wave network has one Home ID.",
+   "A Z-Wave Node ID has a length of one byte.",
+   "A Z-Wave Home ID has a length of four bytes.",
+   "Nodes having different Home IDs can communicate directly with one another."
   ],
-  "answer": "Transport layer"
+  "answer": "A Z-Wave Home ID has a length of four bytes.||A Z-Wave Node ID has a length of one byte.||Each logical Z-Wave network has one Home ID.",
+  "multi": true
  },
  {
   "id": 39,
@@ -500,10 +504,10 @@ export const iotQuestions: Question[] = [
   "options": [
    "1/n",
    "n",
-   "sqrt(n)",
-   "1/sqrt(n)"
+   "√n",
+   "1/√n"
   ],
-  "answer": "1/sqrt(n)"
+  "answer": "1/√n"
  },
  {
   "id": 43,
