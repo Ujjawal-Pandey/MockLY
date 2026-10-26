@@ -243,6 +243,12 @@ const CourseApp = ({
     return `Start a new mock test (${testSize} Qs)`;
   })();
 
+  const handleLogout = async () => {
+    localStorage.removeItem("mockly_guest_mode");
+    await supabase.auth.signOut();
+    window.location.reload();
+  };
+
   return (
     <div className="min-h-screen bg-background">
       <header className="border-b bg-card">
@@ -263,7 +269,12 @@ const CourseApp = ({
                 ))}
               </SelectContent>
             </Select>
-            <Button variant="ghost" size="sm" onClick={() => supabase.auth.signOut()}>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={handleLogout}
+              title="Sign out / Switch account"
+            >
               <LogOut className="h-4 w-4" />
             </Button>
           </div>
