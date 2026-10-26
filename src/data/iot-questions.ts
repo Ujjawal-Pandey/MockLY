@@ -42,149 +42,141 @@ export const iotQuestions: Question[] = [
  {
   "id": 4,
   "week": 1,
-  "question": "Which of the following best describes an Actuator in an IoT system?",
+  "question": "Which statement best explains the relation between IoT and M2M communication?",
   "options": [
-   "A device that only stores historical sensor data in a cloud database",
-   "A sensor node that converts analog voltage into a digital signal",
-   "A device that transforms digital control signals into physical action or mechanical movement",
-   "A communication protocol used for routing packets between IoT gateways"
+   "IoT and M2M are exactly the same",
+   "M2M is broader than IoT because it includes people and applications",
+   "M2M is a part of IoT, while IoT has a broader scope of interactions",
+   "IoT does not include machine-to-machine interaction"
   ],
-  "answer": "A device that transforms digital control signals into physical action or mechanical movement"
+  "answer": "M2M is a part of IoT, while IoT has a broader scope of interactions"
  },
  {
   "id": 5,
   "week": 1,
-  "question": "In the context of IoT, what is the primary role of a sensor?",
+  "question": "State whether the following statement is True or False.\nStatement: In the Web of Things, IoT sensors are replaced completely by cloud databases.",
   "options": [
-   "To execute physical actions and control actuators",
-   "To monitor physical environments and convert physical phenomena into electrical signals",
-   "To route packets across multiple networks without packet loss",
-   "To store all cloud-based big data applications"
+   "True",
+   "False"
   ],
-  "answer": "To monitor physical environments and convert physical phenomena into electrical signals"
+  "answer": "False"
  },
  {
   "id": 6,
   "week": 1,
-  "question": "Which of the following layers is typically responsible for routing data packets from source to destination across different networks in an IoT architecture?",
+  "question": "In an IoT network configuration, local addresses may be valid only within a gateway’s domain. The same local address may even appear under another gateway. The main advantage of this strategy is:",
   "options": [
-   "Application Layer",
-   "Network Layer",
-   "Transport Layer",
-   "Presentation Layer"
+   "It increases unnecessary address consumption",
+   "It helps conserve address space",
+   "It removes the requirement of a gateway",
+   "It prevents any device from communicating with the Internet"
   ],
-  "answer": "Network Layer"
+  "answer": "It helps conserve address space"
  },
  {
   "id": 7,
   "week": 1,
-  "question": "Which of the following are key design challenges in IoT networking compared to traditional enterprise networks?",
+  "question": "Which of the following functions are associated with IoT gateways in the addressing strategy discussed in the lecture?",
   "options": [
-   "Resource constraints (power, memory, processing)",
-   "Highly dynamic and unstable topologies",
-   "Scalability to billions of heterogeneous devices",
-   "High packet error rates and lossy links"
+   "Providing Internet connectivity",
+   "Supporting IoT LAN intra-connectivity",
+   "Obtaining upstream address prefixes using mechanisms such as DHCPv6",
+   "Delegating addresses to nodes using SLAAC"
   ],
-  "answer": "High packet error rates and lossy links||Highly dynamic and unstable topologies||Resource constraints (power, memory, processing)||Scalability to billions of heterogeneous devices",
+  "answer": "Delegating addresses to nodes using SLAAC||Obtaining upstream address prefixes using mechanisms such as DHCPv6||Providing Internet connectivity||Supporting IoT LAN intra-connectivity",
   "multi": true
  },
  {
   "id": 8,
   "week": 1,
-  "question": "What does the term \"Things\" in the Internet of Things broadly refer to?",
+  "question": "Which of the following is true about IPv6 compared to IPv4?",
   "options": [
-   "Only high-end personal computers and servers",
-   "Only enterprise mainframe systems",
-   "Any uniquely identifiable object or device with embedded sensors, actuators, and processing ability",
-   "Only wired network switches and routers"
+   "IPv6 uses dotted decimal notation",
+   "IPv6 has a smaller address space than IPv4",
+   "IPv6 uses hexadecimal notation and supports a much larger address space",
+   "IPv6 requires broadcast addresses in the same way as IPv4"
   ],
-  "answer": "Any uniquely identifiable object or device with embedded sensors, actuators, and processing ability"
+  "answer": "IPv6 uses hexadecimal notation and supports a much larger address space"
  },
  {
   "id": 9,
   "week": 1,
-  "question": "Which of the following communication models is most commonly used for lightweight telemetry data exchange between resource-constrained IoT devices and servers?",
+  "question": "Which statement correctly represents the design expectation from a good sensor?",
   "options": [
-   "File Transfer Protocol (FTP)",
-   "Simple Mail Transfer Protocol (SMTP)",
-   "Message Queuing Telemetry Transport (MQTT)",
-   "Hypertext Transfer Protocol (HTTP/1.1) with large XML payloads"
+   "It should influence the measured property significantly",
+   "It should respond strongly to unrelated physical properties",
+   "It should be sensitive to the measured property and should not disturb it",
+   "It should always produce random output"
   ],
-  "answer": "Message Queuing Telemetry Transport (MQTT)"
+  "answer": "It should be sensitive to the measured property and should not disturb it"
  },
  {
   "id": 10,
   "week": 1,
-  "question": "Which of the following are typically considered components of a basic IoT node or device?",
+  "question": "Which of the following statements about sensor resolution are correct?",
   "options": [
-   "Microcontroller or microprocessor",
-   "Communication interface (transceiver)",
-   "Heavy-duty diesel generator for continuous heavy industrial supply",
-   "Power source (battery or energy harvesting unit)"
+   "Sensor resolution is the smallest change that the sensor can detect",
+   "For a digital sensor, resolution is related to the smallest digital output change it can process",
+   "Sensor resolution and sensor accuracy always refer to exactly the same property",
+   "Sensor accuracy does not depend only on resolution"
   ],
-  "answer": "Communication interface (transceiver)||Microcontroller or microprocessor||Power source (battery or energy harvesting unit)",
+  "answer": "For a digital sensor, resolution is related to the smallest digital output change it can process||Sensor accuracy does not depend only on resolution||Sensor resolution is the smallest change that the sensor can detect",
   "multi": true
  },
  {
   "id": 11,
   "week": 1,
-  "question": "RFID technology in IoT is primarily used for:",
+  "question": "State True or False.\nAn accelerometer that measures acceleration along the x, y, and z coordinate axes is classified as a vector sensor.",
   "options": [
-   "Automatic identification and tracking of objects using radio waves",
-   "Streaming high-definition video surveillance over long distances",
-   "High-speed cryptographic key generation for financial transactions",
-   "Routing IP packets through multi-hop mesh networks"
+   "True",
+   "False"
   ],
-  "answer": "Automatic identification and tracking of objects using radio waves"
+  "answer": "True"
  },
  {
   "id": 12,
   "week": 1,
-  "question": "In wireless sensor networks (WSNs), sensor nodes are typically deployed to:",
+  "question": "A sensor gives different output for the same input value depending on whether that input was reached by increasing or decreasing the measured quantity. This error is called:",
   "options": [
-   "Act as high-throughput servers for cloud computing applications",
-   "Monitor environmental parameters and report back to a sink node or gateway",
-   "Provide high-speed internet Wi-Fi hotspots for mobile phones",
-   "Replace core internet backbone routers"
+   "Quantization error",
+   "Hysteresis error",
+   "IPv6 translation error",
+   "Gateway prefix error"
   ],
-  "answer": "Monitor environmental parameters and report back to a sink node or gateway"
+  "answer": "Hysteresis error"
  },
  {
   "id": 13,
   "week": 1,
-  "question": "Which parameter is most critical for battery-powered IoT devices operating in remote locations for years without maintenance?",
+  "question": "State True or False.\nA hydraulic actuator can produce considerable force because liquids are nearly incompressible.",
   "options": [
-   "Peak processing clock frequency",
-   "Energy efficiency and ultra-low power consumption",
-   "Maximum screen resolution",
-   "Support for multi-gigabit fiber connections"
+   "True",
+   "False"
   ],
-  "answer": "Energy efficiency and ultra-low power consumption"
+  "answer": "True"
  },
  {
   "id": 14,
   "week": 1,
-  "question": "Which of the following factors contribute to the heterogeneity of IoT systems?",
+  "question": "Which of the following statements are correct about Shape Memory Polymer actuators?",
   "options": [
-   "Diverse communication protocols and standards",
-   "Different hardware platforms and operating systems",
-   "Varied data formats and application requirements",
-   "Identical processing power and uniform battery capacities across all nodes"
+   "They may respond to stimuli such as light, heat, electrical, magnetic, pH, or moisture changes",
+   "They can show high strain recovery",
+   "They may have properties such as low density and biocompatibility",
+   "They are used only as passive temperature sensors"
   ],
-  "answer": "Different hardware platforms and operating systems||Diverse communication protocols and standards||Varied data formats and application requirements",
+  "answer": "They can show high strain recovery||They may have properties such as low density and biocompatibility||They may respond to stimuli such as light, heat, electrical, magnetic, pH, or moisture changes",
   "multi": true
  },
  {
   "id": 15,
   "week": 1,
-  "question": "What is the main function of a Gateway in an IoT architecture?",
+  "question": "State whether the following statement is True or False.\nStatement: According to the IoT implementation example discussed in the lecture, data gathered by a sensor travels through a gateway and a proxy server before arriving at the cloud server.",
   "options": [
-   "To bridge local constrained networks (like Zigbee or BLE) to wider IP-based networks (like the Internet)",
-   "To serve as an end-user display screen for visualization",
-   "To act exclusively as a physical sensor measuring temperature",
-   "To store all global internet traffic permanently"
+   "True",
+   "False"
   ],
-  "answer": "To bridge local constrained networks (like Zigbee or BLE) to wider IP-based networks (like the Internet)"
+  "answer": "True"
  },
  {
   "id": 16,
