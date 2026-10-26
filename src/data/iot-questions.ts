@@ -1080,129 +1080,127 @@ export const iotQuestions: Question[] = [
  {
   "id": 91,
   "week": 7,
-  "question": "Which of the following is an open-source hardware board supported by the Python ecosystem for IoT development?",
+  "question": "In the remote data logging system, which socket type is used to send sensor data from the client to the server?",
   "options": [
-   "Raspberry Pi",
-   "Arduino",
-   "BeagleBone Black",
-   "All of these"
+   "SOCK_STREAM",
+   "SOCK_DGRAM",
+   "SOCK_RAW",
+   "SOCK_SEQPACKET"
   ],
-  "answer": "All of these"
+  "answer": "SOCK_DGRAM"
  },
  {
   "id": 92,
   "week": 7,
-  "question": "What does GPIO stand for in the context of Raspberry Pi?",
+  "question": "Which Adafruit function is used in the client code to read humidity and temperature values from the DHT sensor?",
   "options": [
-   "General Purpose Input Output",
-   "General Public Input Output",
-   "Grand Performance Input Output",
-   "Graphical Processing Input Output"
+   "Adafruit_DHT.read_retry()",
+   "Adafruit_DHT.get_data()",
+   "Adafruit_DHT.sense()",
+   "Adafruit_DHT.capture()"
   ],
-  "answer": "General Purpose Input Output"
+  "answer": "Adafruit_DHT.read_retry()"
  },
  {
   "id": 93,
   "week": 7,
-  "question": "What is the primary function of Python on a Raspberry Pi?",
+  "question": "Where does the server in the remote data logging example save the data received from the client as mentioned in the lecture?",
   "options": [
-   "System administration",
-   "Web development",
-   "Interfacing with hardware components",
-   "Database management"
+   "In a MySQL database",
+   "In a text file named Datalog.txt",
+   "On a cloud dashboard",
+   "In an Excel spreadsheet"
   ],
-  "answer": "Interfacing with hardware components"
+  "answer": "In a text file named Datalog.txt"
  },
  {
   "id": 94,
   "week": 7,
-  "question": "In Python, which library is commonly used for GPIO pin manipulation on a Raspberry Pi?",
+  "question": "Which Python string function is used to split the comma-separated sensor data into separate values on the server?",
   "options": [
-   "RPi.GPIO",
-   "GPIO.RPi",
-   "PyGPIO",
-   "RPi.Pin"
+   "split()",
+   "divide()",
+   "partition()",
+   "separate()"
   ],
-  "answer": "RPi.GPIO"
+  "answer": "split()"
  },
  {
   "id": 95,
   "week": 7,
-  "question": "What command is used to install Python packages on a Raspberry Pi?",
+  "question": "State whether the following statement is True or False: Matplotlib Python library is used to plot the temperature and humidity data received at the server in the lecture.",
   "options": [
-   "apt-get install",
-   "pip install",
-   "npm install",
-   "easy_install"
+   "False",
+   "True"
   ],
-  "answer": "pip install"
+  "answer": "True"
  },
  {
   "id": 96,
   "week": 7,
-  "question": "What function is used in RPi.GPIO to clean up the GPIO settings before exiting a Python script?",
+  "question": "Which Matplotlib function turns on interactive mode so that the plot updates in real time as new data arrives?",
   "options": [
-   "GPIO.reset()",
-   "GPIO.clear()",
-   "GPIO.cleanup()",
-   "GPIO.close()"
+   "ion()",
+   "grid()",
+   "subplot()",
+   "figure()"
   ],
-  "answer": "GPIO.cleanup()"
+  "answer": "ion()"
  },
  {
   "id": 97,
   "week": 7,
-  "question": "In Python GPIO programming, which mode is set using GPIO.setmode(GPIO.BOARD)?",
+  "question": "In a traditional (non-SDN) network, where does the routing protocol logic (e.g., OSPF) mainly execute?",
   "options": [
-   "Pin numbering based on BCM SoC",
-   "Pin numbering based on physical board pins",
-   "Pin numbering based on logical layout",
-   "Pin numbering based on wiringPi"
+   "In a centralized controller",
+   "At the individual switches",
+   "On the end-user device",
+   "In the cloud"
   ],
-  "answer": "Pin numbering based on physical board pins"
+  "answer": "At the individual switches"
  },
  {
   "id": 98,
   "week": 7,
-  "question": "How do software-defined networks differ from traditional networks?",
+  "question": "In which year was the OpenFlow project — from which the idea of software-defined networking originated — presented at ACM SIGCOMM?",
   "options": [
-   "Software-defined networks separate control and data planes.",
-   "Traditional networks rely on centralized controllers.",
-   "Software-defined networks do not support wireless communication.",
-   "Traditional networks use programmable switches."
+   "2006",
+   "2008",
+   "2009",
+   "2011"
   ],
-  "answer": "Software-defined networks separate control and data planes."
+  "answer": "2008"
  },
  {
   "id": 99,
   "week": 7,
-  "question": "What is the main component responsible for making forwarding decisions in an SDN architecture?",
+  "question": "What message does a switch send to the SDN controller when it receives a packet for which no matching flow-rule exists?",
   "options": [
-   "Data plane",
-   "Control plane",
-   "Physical switches",
-   "End-user devices"
+   "PACKET-IN message",
+   "FLOW-REQUEST message",
+   "RULE-MISS alert",
+   "CONTROL-SYNC message"
   ],
-  "answer": "Control plane"
+  "answer": "PACKET-IN message"
  },
  {
   "id": 100,
   "week": 7,
-  "question": "In SDN-WISE, what role does the sink node play?",
+  "question": "Which SDN API is used for communication between the control layer and the infrastructure layer?",
   "options": [
-   "Acts as a controller for the entire network",
-   "Connects the WSN to the SDN controller",
-   "Manages power distribution to sensor nodes",
-   "Generates flow rules for all switches"
+   "Northbound API",
+   "Southbound API",
+   "East-Westbound API",
+   "North-Southbound API"
   ],
-  "answer": "Connects the WSN to the SDN controller"
+  "answer": "Southbound API"
  },
  {
   "id": 101,
   "week": 7,
-  "question": "What is the typical default maximum transmission unit MTU size in bytes for IEEE 802.15.4 frames used in SD-WSNs?",
+  "question": "According to the lecture, approximately how many requests per second can a typical SDN controller handle through a single thread?",
   "options": [
-   "127",
+   "50",
    "100",
    "200",
    "500"
@@ -1212,7 +1210,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 102,
   "week": 7,
-  "question": "Which control mechanism is described where the entire network control decisions are taken by a single controller?",
+  "question": "Which control mechanism is described where the entire network's control decisions are taken by a single controller?",
   "options": [
    "Distributed control",
    "Centralized control",
@@ -1248,7 +1246,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 105,
   "week": 7,
-  "question": "In the SDN-WISE protocol stack for sensor nodes, what does INPP stand for?",
+  "question": "In the SDN-WISE protocol stack for sensor nodes, what does \"INPP\" stand for?",
   "options": [
    "Integrated Node Path Protocol",
    "Internal Node Power Processing",

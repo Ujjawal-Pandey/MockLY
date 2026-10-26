@@ -2248,3 +2248,135 @@ Correct answer: (a) True
 All 15 questions for **Week 6: Assignment 6** have been updated in [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 76–90). All single-choice and True/False questions are properly configured for testing and instant feedback.
 
 ---
+
+## 👤 User
+
+Week 7: Assignment 7 — All Questions, Options & Answers
+The screenshots contain all 15 questions from Week 7, covering Python sockets, DHT sensors, Matplotlib, Software-Defined Networking (SDN), and wireless sensor networks.
+
+Question 1
+In the remote data logging system, which socket type is used to send sensor data from the client to the server?
+a. SOCK_STREAM
+b. SOCK_DGRAM
+c. SOCK_RAW
+d. SOCK_SEQPACKET
+Correct answer: (b) SOCK_DGRAM
+
+Question 2
+Which Adafruit function is used in the client code to read humidity and temperature values from the DHT sensor?
+a. Adafruit_DHT.read_retry()
+b. Adafruit_DHT.get_data()
+c. Adafruit_DHT.sense()
+d. Adafruit_DHT.capture()
+Correct answer: (a) Adafruit_DHT.read_retry()
+
+Question 3
+Where does the server in the remote data logging example save the data received from the client as mentioned in the lecture?
+a. In a MySQL database
+b. In a text file named Datalog.txt
+c. On a cloud dashboard
+d. In an Excel spreadsheet
+Correct answer: (b) In a text file named Datalog.txt.
+
+Question 4
+Which Python string function is used to split the comma-separated sensor data into separate values on the server?
+a. split()
+b. divide()
+c. partition()
+d. separate()
+Correct answer: (a) split()
+
+Question 5
+State whether the following statement is True or False.
+Statement: Matplotlib Python library is used to plot the temperature and humidity data received at the server in the lecture.
+a. False
+b. True
+Correct answer: (b) True
+
+Question 6
+Which Matplotlib function turns on interactive mode so that the plot updates in real time as new data arrives?
+a. ion()
+b. grid()
+c. subplot()
+d. figure()
+Correct answer: (a) ion()
+
+Question 7
+In a traditional (non-SDN) network, where does the routing protocol logic (e.g., OSPF) mainly execute?
+a. In a centralized controller
+b. At the individual switches
+c. On the end-user device
+d. In the cloud
+Correct answer: (b) At the individual switches
+
+Question 8
+In which year was the OpenFlow project — from which the idea of software-defined networking originated — presented at ACM SIGCOMM?
+a. 2006
+b. 2008
+c. 2009
+d. 2011
+Correct answer: (b) 2008
+
+Question 9
+What message does a switch send to the SDN controller when it receives a packet for which no matching flow-rule exists?
+a. PACKET-IN message
+b. FLOW-REQUEST message
+c. RULE-MISS alert
+d. CONTROL-SYNC message
+Correct answer: (a) PACKET-IN message
+
+Question 10
+Which SDN API is used for communication between the control layer and the infrastructure layer?
+a. Northbound API
+b. Southbound API
+c. East-Westbound API
+d. North-Southbound API
+Correct answer: (b) Southbound API
+
+Question 11
+According to the lecture, approximately how many requests per second can a typical SDN controller handle through a single thread?
+a. 50
+b. 100
+c. 200
+d. 500
+Correct answer: (c) 200
+
+Question 12
+Which control mechanism is described where the entire network's control decisions are taken by a single controller?
+a. Distributed control
+b. Centralized control
+c. Hierarchical control
+d. Federated control
+Correct answer: (b) Centralized control
+
+Question 13
+Which of the following is listed as a benefit of integrating SDN with IoT?
+a. Increased hardware cost
+b. Visibility of network resources
+c. Reduced sensor accuracy
+d. Elimination of all controllers
+Correct answer: (b) Visibility of network resources
+
+Question 14
+According to the lecture, what is a key resource-constraint challenge in wireless sensor networks that motivates software-defined WSN?
+a. Excess bandwidth
+b. Limited memory for control programs
+c. Too many controllers
+d. Unlimited computation power
+Correct answer: (b) Limited memory for control programs
+
+Question 15
+In the SDN-WISE protocol stack for sensor nodes, what does "INPP" stand for?
+a. Integrated Node Path Protocol
+b. Internal Node Power Processing
+c. In Network Packet Processing
+d. IoT Network Priority Protocol
+Correct answer: (c) In Network Packet Processing
+
+---
+
+## 🤖 Assistant
+
+All 15 questions for **Week 7: Assignment 7** have been updated in [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 91–105). All options and answers are properly configured for testing and instant feedback.
+
+---
