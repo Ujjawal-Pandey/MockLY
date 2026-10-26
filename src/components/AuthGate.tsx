@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import logo from "@/assets/mockly-logo.png";
-import { ArrowRight, AlertCircle } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 
 const AuthGate = ({ children }: { children: ReactNode }) => {
   const [session, setSession] = useState<Session | null>(null);
@@ -16,19 +16,9 @@ const AuthGate = ({ children }: { children: ReactNode }) => {
   const [msg, setMsg] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
-  // Guest mode state (persists so skips work across reloads)
-  const [isGuest, setIsGuest] = useState<boolean>(() => {
-    return localStorage.getItem("mockly_guest_mode") === "true";
-  });
-
   useEffect(() => {
     const { data } = supabase.auth.onAuthStateChange((_e, s) => {
       setSession(s);
-      if (s) {
-        // Clear guest mode if user successfully logged in
-        localStorage.removeItem("mockly_guest_mode");
-        setIsGuest(false);
-      }
     });
 
     supabase.auth.getSession().then(({ data }) => {
@@ -40,12 +30,7 @@ const AuthGate = ({ children }: { children: ReactNode }) => {
   }, []);
 
   if (!ready) return null;
-  if (session || isGuest) return <>{children}</>;
-
-  const handleSkip = () => {
-    localStorage.setItem("mockly_guest_mode", "true");
-    setIsGuest(true);
-  };
+  if (session) return <>{children}</>;
 
   const handleGoogleSignIn = async () => {
     setBusy(true);
@@ -80,13 +65,9 @@ const AuthGate = ({ children }: { children: ReactNode }) => {
         options: { emailRedirectTo: window.location.origin },
       });
       if (error) {
-        if (error.message.toLowerCase().includes("rate limit")) {
-          setMsg("Email rate limit exceeded by Supabase. You can Skip below or turn off 'Confirm email' in Supabase settings.");
-        } else {
-          setMsg(error.message);
-        }
+        setMsg(error.message);
       } else if (!data.session) {
-        setMsg("Check your email to confirm your account, then sign in (or click Skip to start now).");
+        setMsg("Check your email to confirm your account, then sign in.");
       }
     }
     setBusy(false);
@@ -94,18 +75,7 @@ const AuthGate = ({ children }: { children: ReactNode }) => {
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
-      <Card className="w-full max-w-sm p-6 relative" style={{ boxShadow: "var(--shadow-card)" }}>
-        {/* Skip button in top right */}
-        <div className="flex justify-end mb-1">
-          <button
-            type="button"
-            onClick={handleSkip}
-            className="text-xs text-muted-foreground hover:text-foreground font-medium flex items-center gap-1 transition-colors"
-          >
-            Skip for now <ArrowRight className="h-3 w-3" />
-          </button>
-        </div>
-
+      <Card className="w-full max-w-sm p-6" style={{ boxShadow: "var(--shadow-card)" }}>
         <div className="flex justify-center mb-5">
           <h1>
             <span className="sr-only">Mockly</span>
@@ -186,7 +156,7 @@ const AuthGate = ({ children }: { children: ReactNode }) => {
           </Button>
         </form>
 
-        <div className="mt-4 pt-3 border-t border-border/60 text-center space-y-2">
+        <div className="mt-4 pt-3 border-t border-border/60 text-center">
           <button
             type="button"
             className="text-xs text-primary hover:underline font-medium block w-full"
@@ -196,14 +166,6 @@ const AuthGate = ({ children }: { children: ReactNode }) => {
             }}
           >
             {mode === "signin" ? "Don't have an account? Sign up" : "Already have an account? Sign in"}
-          </button>
-
-          <button
-            type="button"
-            onClick={handleSkip}
-            className="text-xs text-muted-foreground hover:text-foreground underline underline-offset-4 block w-full pt-1"
-          >
-            Skip login and practice as guest
           </button>
         </div>
       </Card>

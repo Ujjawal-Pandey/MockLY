@@ -243,10 +243,8 @@ const CourseApp = ({
     return `Start a new mock test (${testSize} Qs)`;
   })();
 
-  const handleLogout = async () => {
-    localStorage.removeItem("mockly_guest_mode");
-    await supabase.auth.signOut();
-    window.location.reload();
+  const handleLogout = () => {
+    supabase.auth.signOut();
   };
 
   return (
