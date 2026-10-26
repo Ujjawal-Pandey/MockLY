@@ -1258,7 +1258,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 106,
   "week": 8,
-  "question": "Which of the following is listed as a problem in traditional non-SDN mobile networks?",
+  "question": "Which of the following is listed as a problem in traditional (non-SDN) mobile networks?",
   "options": [
    "Too flexible hardware architecture",
    "Excess centralized control",
@@ -1270,7 +1270,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 107,
   "week": 8,
-  "question": "In the ODIN architecture for software-defined wireless networks, what does the Odin agent do?",
+  "question": "In the ODIN architecture for software-defined wireless networks, what does the “Odin agent” do?",
   "options": [
    "It is placed at the controller end to manage policies",
    "It replaces the OpenFlow protocol entirely",
@@ -1282,134 +1282,134 @@ export const iotQuestions: Question[] = [
  {
   "id": 108,
   "week": 8,
-  "question": "What is the primary goal of Mobi-Flow's proactive rule placement approach in Software-Defined IoT?",
+  "question": "What is the primary goal of MobiFlow's proactive rule-placement approach in Software-Defined IoT?",
   "options": [
-   "To place flow-rules randomly across all access points",
-   "To predict users' future location and place flow-rules at APs accordingly",
+   "To place flow rules randomly across all access points",
+   "To predict users' future location and place flow rules at APs accordingly",
    "To eliminate the need for a controller",
-   "To increase the number of PACKET-IN messages"
+   "To increase the number of Packet-In messages"
   ],
-  "answer": "To predict users' future location and place flow-rules at APs accordingly"
+  "answer": "To predict users' future location and place flow rules at APs accordingly"
  },
  {
   "id": 109,
   "week": 8,
-  "question": "In the Software-Defined Sensor Network SDSN framework, what is the role of the Task Manager?",
+  "question": "Which simulation tool is mentioned for experimenting with wireless software-defined networks, supporting both wired and wireless (IEEE 802.11) protocols?",
   "options": [
-   "It serves as the physical sensor node that senses environment metrics",
-   "It manages flow tables directly on wireless switches",
-   "It routes network traffic between base stations",
-   "It acts as the user interface through which users submit tasks and query network details"
+   "CloudSim",
+   "NS2",
+   "GreenCloud",
+   "Mininet-WiFi"
   ],
-  "answer": "It acts as the user interface through which users submit tasks and query network details"
+  "answer": "Mininet-WiFi"
  },
  {
   "id": 110,
   "week": 8,
-  "question": "According to the NIST definition, which of the following is NOT listed as an essential characteristic of Cloud Computing?",
+  "question": "According to the NIST definition quoted in the lecture, cloud computing enables on-demand network access to a shared pool of what?",
   "options": [
-   "On-demand self-service",
-   "Dedicated single-tenant hardware for every user",
-   "Broad network access",
-   "Rapid elasticity"
+   "Fixed, dedicated hardware resources",
+   "Configurable computing resources",
+   "Only storage resources",
+   "Only networking resources"
   ],
-  "answer": "Dedicated single-tenant hardware for every user"
+  "answer": "Configurable computing resources"
  },
  {
   "id": 111,
   "week": 8,
-  "question": "Which cloud computing service model provides hardware, operating system, storage, and network infrastructure, while leaving software application development to the user?",
+  "question": "Which of the following is an essential characteristic of cloud computing as defined by NIST?",
   "options": [
-   "Platform as a Service PaaS",
-   "Software as a Service SaaS",
-   "Infrastructure as a Service IaaS",
-   "Anything as a Service XaaS"
+   "Rapid elasticity",
+   "Manual resource allocation",
+   "Single-tenant-only access",
+   "Fixed billing regardless of usage"
   ],
-  "answer": "Platform as a Service PaaS"
+  "answer": "Rapid elasticity"
  },
  {
   "id": 112,
   "week": 8,
-  "question": "In the Cloud Reference Model, which cloud deployment model is provisioned for exclusive use by a specific community of consumers from organizations that have shared concerns?",
+  "question": "Which cloud deployment model is set up for the exclusive use of a single organization, typically managed on-premises or by a third party off-premises?",
   "options": [
-   "Private Cloud",
-   "Community Cloud",
-   "Public Cloud",
-   "Hybrid Cloud"
+   "Public cloud",
+   "Private cloud",
+   "Community cloud",
+   "Multi-cloud"
   ],
-  "answer": "Community Cloud"
+  "answer": "Private cloud"
  },
  {
   "id": 113,
   "week": 8,
-  "question": "What is the main function of the Virtual Machine Monitor VMM or Hypervisor in virtualization?",
+  "question": "Which of the following is given as an example of a public cloud provider in the lecture?",
   "options": [
-   "To mediate access to physical hardware resources among virtual machines",
-   "To physically manufacture virtual memory chips",
-   "To serve as a high-level user interface for web browsing",
-   "To manage public cloud billing and accounting exclusively"
+   "Amazon Web Services (AWS)",
+   "A company's internal private data center",
+   "A single organization's dedicated server room",
+   "A community-only cloud shared by hospitals"
   ],
-  "answer": "To mediate access to physical hardware resources among virtual machines"
+  "answer": "Amazon Web Services (AWS)"
  },
  {
   "id": 114,
   "week": 8,
-  "question": "Which type of hypervisor runs directly on the bare-metal hardware without requiring an underlying operating system?",
+  "question": "Which cloud service model provides on-demand delivery of computing infrastructure such as servers, storage, network, and operating system?",
   "options": [
-   "Type-2 Hypervisor",
-   "Hosted Hypervisor",
-   "Type-1 Hypervisor",
-   "Application-level Hypervisor"
+   "SaaS",
+   "PaaS",
+   "IaaS",
+   "DBaaS"
   ],
-  "answer": "Type-1 Hypervisor"
+  "answer": "IaaS"
  },
  {
   "id": 115,
   "week": 8,
-  "question": "What is Full Virtualization?",
+  "question": "In the IaaS working methodology, which component allows multiple virtual machines to share the same physical hardware?",
   "options": [
-   "Virtualization where the guest operating system is modified to communicate directly with the hypervisor",
-   "Virtualization where only user-level applications are run in isolated containers",
-   "Virtualization that does not use a hypervisor at all",
-   "Virtualization where the underlying physical hardware is completely simulated, allowing unmodified guest OS to run"
+   "DNS server",
+   "Load balancer",
+   "Firewall",
+   "Hypervisor"
   ],
-  "answer": "Virtualization where the underlying physical hardware is completely simulated, allowing unmodified guest OS to run"
+  "answer": "Hypervisor"
  },
  {
   "id": 116,
   "week": 8,
-  "question": "How does Para-Virtualization differ from Full Virtualization?",
+  "question": "Which cloud service model is described as “application middleware offered as a service to developers,” removing the need to manage underlying hardware and operating systems?",
   "options": [
-   "Para-virtualization requires no hypervisor",
-   "Para-virtualization can only run Windows operating systems",
-   "Para-virtualization modifies the guest OS so it is aware it is running on a hypervisor, using hypercalls instead of binary translation",
-   "Para-virtualization provides lower performance than full virtualization"
+   "IaaS",
+   "SaaS",
+   "PaaS",
+   "Community cloud"
   ],
-  "answer": "Para-virtualization modifies the guest OS so it is aware it is running on a hypervisor, using hypercalls instead of binary translation"
+  "answer": "PaaS"
  },
  {
   "id": 117,
   "week": 8,
-  "question": "In Container-based Virtualization OS-level virtualization, what is shared among all containers running on the same host?",
+  "question": "What is the primary purpose of a Service Level Agreement (SLA) in cloud service management?",
   "options": [
-   "Each container has its own independent kernel",
-   "All containers share the host operating system kernel",
-   "Containers do not use host hardware resources",
-   "Containers require dedicated physical processors for each container"
+   "To define the physical location of the data center",
+   "To define the non-functional requirements expected from the service provider",
+   "To specify the programming language used by the cloud provider",
+   "To list the hardware vendors used by the provider"
   ],
-  "answer": "All containers share the host operating system kernel"
+  "answer": "To define the non-functional requirements expected from the service provider"
  },
  {
   "id": 118,
   "week": 8,
-  "question": "In the Infrastructure as a Service IaaS model, which layer is typically managed by the cloud service provider?",
+  "question": "In cloud service accounting and billing, what does “service accounting” primarily aim to obtain?",
   "options": [
-   "The underlying physical servers, storage, networking, and hypervisor",
-   "The operating system installed on the virtual machine",
-   "The application data stored inside the virtual machine",
-   "The source code of hosted applications"
+   "Resource-usage information, typically in the form of records",
+   "The physical address of end-users",
+   "The source code of hosted applications",
+   "The marketing budget of the provider"
   ],
-  "answer": "The underlying physical servers, storage, networking, and hypervisor"
+  "answer": "Resource-usage information, typically in the form of records"
  },
  {
   "id": 119,
@@ -1450,7 +1450,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 122,
   "week": 9,
-  "question": "Which OpenStack component provides the dashboard GUI that gives an overview of the other components?",
+  "question": "Which OpenStack component provides the dashboard (GUI) that gives an overview of the other components?",
   "options": [
    "Nova",
    "Keystone",
@@ -1474,86 +1474,86 @@ export const iotQuestions: Question[] = [
  {
   "id": 124,
   "week": 9,
-  "question": "In the sensor-cloud architecture, which component is primarily responsible for physical data collection from the environment?",
+  "question": "Which script/tool is used in the lecture to install OpenStack, requiring local.conf to be configured with passwords and HOST_IP before running?",
   "options": [
-   "Cloud Service Provider",
-   "Sensor Nodes / Wireless Sensor Networks WSNs",
-   "Virtual Sensor Manager",
-   "Sensor-Cloud User"
+   "`stack.sh` via DevStack",
+   "docker-compose",
+   "kubeadm",
+   "ansible-playbook"
   ],
-  "answer": "Cloud Service Provider"
+  "answer": "`stack.sh` via DevStack"
  },
  {
   "id": 125,
   "week": 9,
-  "question": "What is the primary role of virtual sensors in a sensor-cloud framework?",
+  "question": "According to the lecture, what does sensor-cloud fundamentally provide beyond merely integrating sensors with cloud computing?",
   "options": [
-   "To replace physical sensors entirely",
-   "To provide abstraction, pooling, and dynamic allocation of physical sensor resources",
-   "To increase the energy consumption of sensor nodes",
-   "To execute local control loops without network connectivity"
+   "A physical replacement for all sensor hardware",
+   "Virtualization of sensor nodes, offered on a pay-per-use basis",
+   "A way to eliminate the need for a sink node",
+   "Free unlimited sensor deployment"
   ],
-  "answer": "To provide abstraction, pooling, and dynamic allocation of physical sensor resources"
+  "answer": "Virtualization of sensor nodes, offered on a pay-per-use basis"
  },
  {
   "id": 126,
   "week": 9,
-  "question": "Which of the following is a key advantage of Sensor-Cloud over traditional Wireless Sensor Networks WSNs?",
+  "question": "In a traditional Wireless Sensor Network (WSN), who is typically responsible for redeployment of the sensor nodes?",
   "options": [
-   "Limited scalability",
-   "Single-user access only",
-   "Multi-tenancy and high resource utilization",
-   "High physical maintenance per user"
+   "The Sensor-Cloud Service Provider (SCSP)",
+   "The end-user of the sensor-cloud",
+   "The WSN-user",
+   "A third-party auditor"
   ],
-  "answer": "Multi-tenancy and high resource utilization"
+  "answer": "The WSN-user"
  },
  {
   "id": 127,
   "week": 9,
-  "question": "In sensor-cloud environments, what does Sensor-as-a-Service SaaS allow users to do?",
+  "question": "In the sensor-cloud model, which actor purchases physical sensor devices and lends them to the sensor-cloud, playing a role from a business perspective?",
   "options": [
-   "Purchase physical sensor hardware permanently",
-   "Access, manage, and consume sensor data on-demand via cloud interfaces",
-   "Disable all physical sensor security protocols",
-   "Manually re-wire sensor nodes"
+   "End-user",
+   "Sensor-owner",
+   "Sensor-Cloud Service Provider (SCSP)",
+   "WSN-user"
   ],
-  "answer": "Access, manage, and consume sensor data on-demand via cloud interfaces"
+  "answer": "Sensor-owner"
  },
  {
   "id": 128,
   "week": 9,
-  "question": "Which management function in sensor-cloud handles the mapping of physical sensors to virtual sensors?",
+  "question": "Which of the following is a major limitation of traditional WSNs that motivates the sensor-cloud model?",
   "options": [
-   "Data Caching Engine",
-   "Provisioning and Management Mechanism",
-   "Physical Gateway Controller",
-   "User Billing Module"
+   "Unlimited scalability at zero cost",
+   "Difficulty adapting to a change of requirement (e.g., moving from agriculture to smart-home use)",
+   "Excessive availability of skilled vendors",
+   "No need for maintenance"
   ],
-  "answer": "Provisioning and Management Mechanism"
+  "answer": "Difficulty adapting to a change of requirement (e.g., moving from agriculture to smart-home use)"
  },
  {
   "id": 129,
   "week": 9,
-  "question": "What is the primary purpose of data caching mechanisms in sensor-cloud systems?",
+  "question": "In the Optimal Composition of Virtual Sensors, what does CoV-I refer to?",
   "options": [
-   "To permanently store all raw data without indexing",
-   "To reduce redundant data transmissions and save energy/bandwidth",
-   "To increase query latency for end-users",
-   "To eliminate the need for virtual sensors"
+   "Composition of virtual sensors spanning multiple geographic regions",
+   "Composition of virtual sensors using only homogeneous nodes within the same geographic region",
+   "A pricing model for sensor-cloud",
+   "A caching mechanism for sensor data"
   ],
-  "answer": "To reduce redundant data transmissions and save energy/bandwidth"
+  "answer": "Composition of virtual sensors using only homogeneous nodes within the same geographic region"
  },
  {
   "id": 130,
   "week": 9,
-  "question": "What type of caching involves storing data directly within the sensor nodes or gateway before transmission to the cloud?",
+  "question": "In the sensor-cloud caching mechanism, which cache handles requests directly from the end-user and decides whether to serve data directly or re-cache from another source?",
   "options": [
-   "Cloud-side Cache",
-   "Edge / Local Cache",
-   "Distributed Cache DC",
-   "Internal Cache IC"
+   "External Cache (EC)",
+   "Sensor Cache (SC)",
+   "Distributed Cache (DC)",
+   "Internal Cache (IC)"
   ],
-  "answer": "Internal Cache IC"
+  "answer": "Internal Cache (IC)"
  },
  {
   "id": 131,
@@ -1570,7 +1570,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 132,
   "week": 9,
-  "question": "Which company is credited with coining the term fog computing?",
+  "question": "Which company is credited with coining the term “fog computing”?",
   "options": [
    "Google",
    "Amazon",
@@ -1594,7 +1594,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 134,
   "week": 9,
-  "question": "Where is the fog layer positioned in the fog computing architecture?",
+  "question": "Where is the fog layer positioned in the fog-computing architecture?",
   "options": [
    "Above the cloud layer",
    "Between the cloud and the IoT devices",
@@ -1608,7 +1608,7 @@ export const iotQuestions: Question[] = [
   "week": 9,
   "question": "Which of the following is NOT listed as a required characteristic of a fog node?",
   "options": [
-   "Storage transient",
+   "Storage (transient)",
    "Computing facility for quick decisions",
    "Network connectivity",
    "Permanent, unlimited archival storage"
@@ -1618,19 +1618,19 @@ export const iotQuestions: Question[] = [
  {
   "id": 136,
   "week": 10,
-  "question": "In the analogy comparing humans to smart cities presented in the lecture, what do Sensors and Tags correspond to?",
+  "question": "In the analogy comparing humans to smart cities presented in the lecture, what do “Sensors and Tags” correspond to?",
   "options": [
    "Skeleton",
    "Nerves",
-   "Sensory Organs",
+   "Sensory organs",
    "Brain"
   ],
-  "answer": "Sensory Organs"
+  "answer": "Sensory organs"
  },
  {
   "id": 137,
   "week": 10,
-  "question": "Which of the following is listed as one of the six Application Focus Areas of a smart city?",
+  "question": "Which of the following is listed as one of the six “Application Focus Areas” of a smart city?",
   "options": [
    "Smart Economy",
    "Smart Bandwidth",
@@ -1642,7 +1642,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 138,
   "week": 10,
-  "question": "Under Current Focus Areas of smart cities, which application area specifically deals with the auto routing of vehicles to empty slots and detecting vacant slots?",
+  "question": "Under “Current Focus Areas” of smart cities, which application deals with automatically routing vehicles to empty slots and detecting vacant slots?",
   "options": [
    "Smart Homes",
    "Smart Energy",
@@ -1654,82 +1654,82 @@ export const iotQuestions: Question[] = [
  {
   "id": 139,
   "week": 10,
-  "question": "What is a major challenge in implementing Home Automation Systems?",
+  "question": "Which IoT challenge in smart cities relates to the risk of data leakage arising from multiple tenants sharing the same infrastructure?",
   "options": [
-   "Lack of user interest",
-   "Inability to connect devices to power sources",
-   "Interoperability among devices from different manufacturers",
-   "High availability of standardized protocols"
+   "Reliability",
+   "Heterogeneity",
+   "Security and Privacy",
+   "Legal and Social aspects"
   ],
-  "answer": "Interoperability among devices from different manufacturers"
+  "answer": "Security and Privacy"
  },
  {
   "id": 140,
   "week": 10,
-  "question": "Which of the following best describes a Smart Grid integration with smart homes?",
+  "question": "What is the primary purpose of data fusion in IoT-enabled smart-city environments, as described in the lecture?",
   "options": [
-   "Using smart grids to bypass local electricity providers",
-   "Enabling two-way communication between the utility provider and the home to optimize energy usage",
-   "Generating solar power without battery storage",
-   "Replacing home appliances with high-voltage industrial equipment"
+   "To delete redundant sensors from the network",
+   "To make the large incoming data volume precise and accurate for better decision-making",
+   "To replace the need for any sensors",
+   "To increase network latency intentionally"
   ],
-  "answer": "Enabling two-way communication between the utility provider and the home to optimize energy usage"
+  "answer": "To make the large incoming data volume precise and accurate for better decision-making"
  },
  {
   "id": 141,
   "week": 10,
-  "question": "Smart cities use IoT mainly to:",
+  "question": "Which data-fusion challenge refers to the situation where the same type of sensor reports different data for the same location?",
   "options": [
-   "Increase manual labor in public services",
-   "Restrict communication between citizens and city officials",
-   "Enhance operational efficiency, share information with the public, and improve public service quality and citizen welfare",
-   "Reduce the use of digital technology in governance"
+   "Imperfection",
+   "Ambiguity",
+   "Conflicts",
+   "Alignment"
   ],
-  "answer": "Enhance operational efficiency, share information with the public, and improve public service quality and citizen welfare"
+  "answer": "Conflicts"
  },
  {
   "id": 142,
   "week": 10,
-  "question": "Which sensor type is commonly used in smart traffic management systems to detect vehicle flow?",
+  "question": "In the stages of data fusion, at which level does fusion of information happen at the sensor node or within the local network itself?",
   "options": [
-   "Humidity sensor",
-   "Gas sensor",
-   "Soil moisture sensor",
-   "Inductive loop sensor"
+   "Decision level",
+   "Feature level",
+   "Pixel level",
+   "Signal level"
   ],
-  "answer": "Inductive loop sensor"
+  "answer": "Signal level"
  },
  {
   "id": 143,
   "week": 10,
-  "question": "What role does Fog or Edge computing play in Smart City applications?",
+  "question": "Which of the following is listed as one of the three functional layers of a smart parking system?",
   "options": [
-   "It processes data closer to the source, reducing latency and bandwidth usage",
-   "It increases network latency by rerouting data through distant servers",
-   "It replaces all cloud servers permanently",
-   "It eliminates the need for sensor nodes"
+   "Information Collection",
+   "Fuel Refilling",
+   "Vehicle Manufacturing",
+   "Traffic Signal Coloring"
   ],
-  "answer": "It processes data closer to the source, reducing latency and bandwidth usage"
+  "answer": "Information Collection"
  },
  {
   "id": 144,
   "week": 10,
-  "question": "What is the standard designated by IEEE for Wireless Access in Vehicular Environments WAVE?",
+  "question": "In the classification of energy-harvesting solutions for smart cities, which type intentionally deploys energy sources near IoT devices?",
   "options": [
-   "IEEE 802.11a",
-   "IEEE 802.15.4",
-   "IEEE 802.3",
-   "IEEE 802.11p"
+   "Ambient energy harvesting",
+   "Passive harvesting",
+   "Grid-tied harvesting",
+   "Dedicated energy harvesting"
   ],
-  "answer": "IEEE 802.11p"
+  "answer": "Dedicated energy harvesting"
  },
  {
   "id": 145,
   "week": 10,
-  "question": "Which of the following is a low-power wireless communications technology operating in the 2.4 GHz band widely used in Home Area Networks HAN?",
+  "question": "Which Home Area Network (HAN) standard is associated with IEEE 802.15.4 at the physical and MAC layers and aims at low-cost, low-energy devices?",
   "options": [
-   "Ethernet",
-   "Bluetooth",
+   "UPnP",
+   "DLNA",
    "Zigbee",
    "X-10"
   ],
@@ -1738,9 +1738,9 @@ export const iotQuestions: Question[] = [
  {
   "id": 146,
   "week": 10,
-  "question": "Which HAN standard enables remote control of compliant devices over existing power lines and electrical wiring in a house, and is mainly used for lighting and appliance control?",
+  "question": "Which HAN standard enables remote control of compliant devices over existing power lines/electrical wiring in a house, mainly for lighting and appliance control?",
   "options": [
-   "Konnex KNX",
+   "Konnex (KNX)",
    "UPnP",
    "LonWorks",
    "X-10"
@@ -1750,7 +1750,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 147,
   "week": 10,
-  "question": "According to the lecture, why does traditional TCP/IP fail to work well for Vehicle-to-Everything V2X communication?",
+  "question": "According to the lecture, why does traditional TCP/IP fail to work well for Vehicle-to-Everything (V2X) communication?",
   "options": [
    "TCP/IP was designed mainly for single-pair information exchange dependent on data location",
    "TCP/IP cannot be used with any wireless devices",
@@ -1762,14 +1762,14 @@ export const iotQuestions: Question[] = [
  {
   "id": 148,
   "week": 10,
-  "question": "Which frequency spectrum did the US Department of Transport and FCC allocate for Intelligent Connected Vehicles ICVs?",
+  "question": "Which frequency spectrum did the US Department of Transportation and FCC allocate for Intelligent Connected Vehicles (ICVs)?",
   "options": [
    "2.4 GHz ISM band",
-   "75 MHz 5850 to 5925 MHz",
+   "75 MHz (5850–5925 MHz)",
    "900 MHz band",
    "60 GHz mmWave band"
   ],
-  "answer": "75 MHz 5850 to 5925 MHz"
+  "answer": "75 MHz (5850–5925 MHz)"
  },
  {
   "id": 149,
@@ -1786,7 +1786,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 150,
   "week": 10,
-  "question": "In the VANET domain classification, which domain consists of vehicles mobile and Road-Side Units RSUs static, communicating via V2V or V2I using the DSRC stack?",
+  "question": "In the VANET domain classification, which domain consists of vehicles (mobile) and Road-Side Units (RSUs, static), communicating through V2V or V2I using the DSRC stack?",
   "options": [
    "In-Vehicle Domain",
    "Cloud Domain",
@@ -1798,106 +1798,106 @@ export const iotQuestions: Question[] = [
  {
   "id": 151,
   "week": 11,
-  "question": "In Smart Grid SCADA systems, which layer is responsible for gathering data directly from sensors and actuators installed on power equipment?",
+  "question": "According to the lecture, which feature distinguishes a smart grid from a traditional electrical grid?",
   "options": [
-   "Control Center",
-   "Communication Infrastructure",
-   "Field Level / Process Level",
-   "Enterprise Level"
+   "Energy distribution is only one-directional",
+   "Monitoring and restoration are always performed manually",
+   "It enables bidirectional flows of energy with two-way communication and control",
+   "Energy generation must occur only at centralized power plants"
   ],
-  "answer": "Field Level / Process Level"
+  "answer": "It enables bidirectional flows of energy with two-way communication and control"
  },
  {
   "id": 152,
   "week": 11,
-  "question": "In Smart Grid communication networks, which network domain typically connects smart meters at customer premises to local data concentrators or neighborhood aggregators?",
+  "question": "What is the role of a smart meter in a smart home?",
   "options": [
-   "Wide Area Network WAN",
-   "Neighborhood Area Network NAN / Field Area Network FAN",
-   "Core Backbone Network",
-   "Global Data Network"
+   "It generates electricity from renewable energy sources",
+   "It provides the Smart Grid interface between the consumer and the energy service provider",
+   "It replaces the home energy management system",
+   "It operates only as a one-way energy meter without information exchange"
   ],
-  "answer": "Neighborhood Area Network NAN / Field Area Network FAN"
+  "answer": "It provides the Smart Grid interface between the consumer and the energy service provider"
  },
  {
   "id": 153,
   "week": 11,
-  "question": "Which component is responsible for measuring electrical parameters at customer sites and transmitting billing data in a Smart Grid architecture?",
+  "question": "Under Time-of-Use pricing, when are consumers encouraged to operate smart appliances to reduce their energy cost?",
   "options": [
-   "Phasor Measurement Unit PMU",
-   "Smart Meter",
-   "Programmable Logic Controller PLC",
-   "Human-Machine Interface HMI"
+   "During off-peak hours",
+   "Only during on-peak hours",
+   "Only when the grid has a blackout",
+   "At a fixed time independent of the grid load"
   ],
-  "answer": "Smart Meter"
+  "answer": "During off-peak hours"
  },
  {
   "id": 154,
   "week": 11,
-  "question": "What is the primary function of Phasor Measurement Units PMUs in a Smart Grid?",
+  "question": "In net metering, the consumer's final bill depends on which two energy flows?",
   "options": [
-   "High-frequency synchronized measurements of voltage and current phasors for real-time grid monitoring",
-   "Automated customer billing",
-   "Controlling household appliances based on electricity prices",
-   "Physical security monitoring of power sub-stations"
+   "Reactive power and communication traffic",
+   "Only the energy generated at centralized power plants",
+   "Only the energy stored in the consumer's battery",
+   "Energy inflow from the grid and energy outflow from the consumer to the grid"
   ],
-  "answer": "High-frequency synchronized measurements of voltage and current phasors for real-time grid monitoring"
+  "answer": "Energy inflow from the grid and energy outflow from the consumer to the grid"
  },
  {
   "id": 155,
   "week": 11,
-  "question": "In Smart Grid distribution automation, which device is commonly used for localized control, monitoring, and automation of substation equipment?",
+  "question": "Which device is used in a smart-grid operation center to sample voltage and current for monitoring the transmission system?",
   "options": [
-   "Smart Phone",
-   "Intelligent Electronic Device IED",
-   "Cloud Server",
-   "Web Browser"
+   "Phasor Measurement Unit (PMU)",
+   "Data Aggregator Unit (DAU)",
+   "Smart appliance controller",
+   "Universal Power Line Bus"
   ],
-  "answer": "Intelligent Electronic Device IED"
+  "answer": "Phasor Measurement Unit (PMU)"
  },
  {
   "id": 156,
   "week": 11,
-  "question": "Why is Demand Response DR an important feature in Smart Grids?",
+  "question": "Which of the following is a function of distribution intelligence in the smart grid?",
   "options": [
-   "It increases power transmission line losses",
-   "It enables customers to adjust their electricity usage during peak periods to help balance supply and demand",
-   "It replaces renewable energy generation completely",
-   "It eliminates the need for any communication networks in the grid"
+   "Preventing all use of smart meters",
+   "Identifying the source of a power outage and supporting automatic power-flow restoration",
+   "Restricting the grid to one-way communication",
+   "Removing protection and control from feeder lines"
   ],
-  "answer": "It enables customers to adjust their electricity usage during peak periods to help balance supply and demand"
+  "answer": "Identifying the source of a power outage and supporting automatic power-flow restoration"
  },
  {
   "id": 157,
   "week": 11,
-  "question": "Which communication protocol or standard is specifically designed for substation automation and inter-device communication in power systems?",
+  "question": "In smart-grid communication, what does a gateway connect?",
   "options": [
-   "HTTP",
-   "IEC 61850",
-   "SMTP",
-   "FTP"
+   "Closely located smart meters to Data Aggregator Units (DAUs)",
+   "Only power plants directly to home appliances",
+   "PMUs directly to plug-in electric vehicles",
+   "Renewable generators directly to SCADA without intermediate communication"
   ],
-  "answer": "IEC 61850"
+  "answer": "Closely located smart meters to Data Aggregator Units (DAUs)"
  },
  {
   "id": 158,
   "week": 11,
-  "question": "Which of the following is a key cyber security threat specifically targeted at manipulating timestamped measurements in Smart Grid synchrophasor networks?",
+  "question": "Which type of attack compromises the availability of smart-grid components or information by making them inaccessible when needed?",
   "options": [
-   "E-mail phishing",
-   "Time synchronization attack",
-   "Data visualization attack",
-   "Denial of Service DoS attack"
+   "Net-metering attack",
+   "Time-synchronization attack",
+   "Data-visualization attack",
+   "Denial of Service (DoS) attack"
   ],
-  "answer": "Denial of Service DoS attack"
+  "answer": "Denial of Service (DoS) attack"
  },
  {
   "id": 159,
   "week": 11,
-  "question": "How is the Industrial Internet of Things IIoT described in the lecture?",
+  "question": "How is the Industrial Internet of Things (IIoT) described in the lecture?",
   "options": [
    "An application of IoT in industries that links automation systems with enterprise, planning, and product lifecycle",
-   "A consumer-only network for home entertainment devices",
+   "A consumer-only network for home-entertainment devices",
    "A replacement for all industrial automation without networking",
    "A system used only for storing data without machine communication"
   ],
@@ -1918,14 +1918,14 @@ export const iotQuestions: Question[] = [
  {
   "id": 161,
   "week": 11,
-  "question": "According to the lecture, which technology is identified as the key enabling technology for vehicle-to-vehicle and vehicle-to-road communications in Intelligent Transportation Systems?",
+  "question": "According to the lecture, which technology is identified as the key enabling technology for vehicle-to-vehicle and vehicle-to-road communication in Intelligent Transportation Systems?",
   "options": [
    "Universal Power Line Bus",
-   "Hadoop Distributed File System HDFS",
-   "Supervisory Control and Data Acquisition SCADA",
-   "Dedicated Short-Range Communications DSRC"
+   "Hadoop Distributed File System (HDFS)",
+   "Supervisory Control and Data Acquisition (SCADA)",
+   "Dedicated Short-Range Communications (DSRC)"
   ],
-  "answer": "Dedicated Short-Range Communications DSRC"
+  "answer": "Dedicated Short-Range Communications (DSRC)"
  },
  {
   "id": 162,
@@ -1935,7 +1935,7 @@ export const iotQuestions: Question[] = [
    "Air quality, poisonous gases, and oxygen level inside mines",
    "Only the billing amount of mine workers",
    "Only the color of mining equipment",
-   "Only the internet browsing history of operators"
+   "Only the internet-browsing history of operators"
   ],
   "answer": "Air quality, poisonous gases, and oxygen level inside mines"
  },
@@ -1966,7 +1966,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 165,
   "week": 11,
-  "question": "In Hadoop Distributed File System HDFS, which node stores the actual data blocks?",
+  "question": "In Hadoop Distributed File System (HDFS), which node stores the actual data blocks?",
   "options": [
    "Datanode",
    "Namenode",
@@ -2002,7 +2002,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 168,
   "week": 12,
-  "question": "Analysis of Variance ANOVA is best applied when which of the following are to be compared?",
+  "question": "Analysis of Variance (ANOVA) is best applied when which of the following are to be compared?",
   "options": [
    "Only a single observation",
    "More than two populations or samples",
@@ -2014,86 +2014,86 @@ export const iotQuestions: Question[] = [
  {
   "id": 169,
   "week": 12,
-  "question": "In regression analysis, what does a linear regression model assume between the independent and dependent variables?",
+  "question": "What does Pearson's correlation coefficient (r) measure?",
   "options": [
-   "A quadratic relationship",
-   "A non-linear exponential relationship",
-   "A straight-line relationship",
-   "No relationship at all"
+   "The number of equations in a statistical model",
+   "The maximum value in a dataset",
+   "The strength of association between two variables",
+   "The sample size of an experiment"
   ],
-  "answer": "A straight-line relationship"
+  "answer": "The strength of association between two variables"
  },
  {
   "id": 170,
   "week": 12,
-  "question": "In an agricultural IoT deployment, what is the primary role of soil moisture sensors?",
+  "question": "What is a primary objective of the AgriSens smart-water-management system?",
   "options": [
-   "To calculate farm taxation",
-   "To predict global commodity market prices",
-   "To record audio signals from crops",
-   "To measure the volumetric water content in soil for optimal irrigation"
+   "Restricting irrigation control to manual operation only",
+   "Increasing irrigation water use regardless of soil condition",
+   "Removing all sensors from agricultural fields",
+   "Achieving more crop yield with less water"
   ],
-  "answer": "To measure the volumetric water content in soil for optimal irrigation"
+  "answer": "Achieving more crop yield with less water"
  },
  {
   "id": 171,
   "week": 12,
-  "question": "Which of the following is an example of an actuator used in smart agriculture systems?",
+  "question": "Which set correctly represents the three layers of the proposed AgriSens architecture?",
   "options": [
-   "Temperature sensor",
-   "Solenoid valve for automated water release",
-   "Light-dependent resistor",
-   "Soil pH probe"
+   "Physical layer; transport layer; presentation layer",
+   "Sensing and actuating layer; processing, storage and service layer; application layer",
+   "User layer; billing layer; routing layer",
+   "Sensor layer; firewall layer; operating-system layer"
   ],
-  "answer": "Solenoid valve for automated water release"
+  "answer": "Sensing and actuating layer; processing, storage and service layer; application layer"
  },
  {
   "id": 172,
   "week": 12,
-  "question": "In IoT-enabled healthcare monitoring, what is the function of a Pulse Oximeter sensor?",
+  "question": "Which component is included in the integrated design of an AgriSens sensor node?",
   "options": [
-   "To measure atmospheric pressure",
-   "To measure blood oxygen saturation level SpO2 and pulse rate",
-   "To track ambient room temperature",
-   "To detect movement of furniture"
+   "Meter data management system for smart grids",
+   "Power management unit",
+   "Phasor measurement unit",
+   "Hadoop Namenode"
   ],
-  "answer": "To measure blood oxygen saturation level SpO2 and pulse rate"
+  "answer": "Power management unit"
  },
  {
   "id": 173,
   "week": 12,
-  "question": "Which wireless communication technology is commonly preferred for short-range transmission between wearable health sensors and a patient smartphone gateway?",
+  "question": "What is the function of the multi-user server in the AgriSens remote-server design?",
   "options": [
-   "Satellite link",
-   "Microwave link",
-   "Bluetooth Low Energy BLE",
-   "Coaxial cable"
+   "It supplies electrical power to the sensor nodes",
+   "It measures soil moisture directly in the field",
+   "It sends field information to the farmer's mobile phone using SMS and executes farmer queries and control messages",
+   "It replaces all gateways with wired links"
   ],
-  "answer": "Bluetooth Low Energy BLE"
+  "answer": "It sends field information to the farmer's mobile phone using SMS and executes farmer queries and control messages"
  },
  {
   "id": 174,
   "week": 12,
-  "question": "In human activity monitoring, which sensor is most widely used to detect motion, posture, and step counts?",
+  "question": "In the IoT healthcare architecture discussed in the lecture, which layer contains smartphones and tablets used as data aggregators?",
   "options": [
-   "Gas sensor",
-   "Ultrasonic liquid sensor",
-   "Soil moisture sensor",
-   "3-axis Accelerometer"
+   "Physical power layer",
+   "Sensing layer",
+   "Cloud platform",
+   "Aggregated layer"
   ],
-  "answer": "3-axis Accelerometer"
+  "answer": "Aggregated layer"
  },
  {
   "id": 175,
   "week": 12,
-  "question": "What is a major challenge in real-time healthcare monitoring using IoT devices?",
+  "question": "Which of the following is an example of preventive care enabled by IoT healthcare?",
   "options": [
-   "Ensuring data privacy, security, and low-latency critical alerts",
-   "Absence of any wireless protocols",
-   "Excess battery life on all sensor tags",
-   "Inability of computers to store numerical values"
+   "Fall detection for senior citizens",
+   "Disabling emergency alerts",
+   "Removing physiological sensors from patients",
+   "Storing only paper-based medical records"
   ],
-  "answer": "Ensuring data privacy, security, and low-latency critical alerts"
+  "answer": "Fall detection for senior citizens"
  },
  {
   "id": 176,

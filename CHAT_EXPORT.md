@@ -2380,3 +2380,17 @@ Correct answer: (c) In Network Packet Processing
 All 15 questions for **Week 7: Assignment 7** have been updated in [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 91–105). All options and answers are properly configured for testing and instant feedback.
 
 ---
+
+## 👤 User
+
+[Provided full consolidated Markdown question bank for Weeks 7–12 with all questions, options, and answer keys]
+
+---
+
+## 🤖 Assistant
+
+All remaining questions for **Weeks 8, 9, 10, 11, and 12** have been parsed and integrated into [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 106–180).
+
+The entire **Internet of Things (IoT)** question bank (all 12 weeks, 180 questions in total) is now 100% verified, matching all official assignment questions and answer keys.
+
+---
