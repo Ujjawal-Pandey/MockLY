@@ -926,7 +926,7 @@ export const iotQuestions: Question[] = [
  {
   "id": 78,
   "week": 6,
-  "question": "In Python exception handling, which keyword is used to handle an exception raised inside the try block?",
+  "question": "In Python's exception handling, which keyword is used to handle an exception raised inside the try block?",
   "options": [
    "catch",
    "except",
@@ -938,53 +938,77 @@ export const iotQuestions: Question[] = [
  {
   "id": 79,
   "week": 6,
-  "question": "State whether the following statement is True or False: Python dictionaries allow duplicate keys.",
+  "question": "Which mode of Python's open() function is used to add data to the end of an existing file without erasing its existing content?",
   "options": [
-   "True",
-   "False",
-   "None of the above",
-   "Both"
+   "r (read mode)",
+   "w (write mode)",
+   "a (append mode)",
+   "r+ (read and write mode)"
   ],
-  "answer": "None of the above"
+  "answer": "a (append mode)"
  },
  {
   "id": 80,
   "week": 6,
-  "question": "In Python, which module is used to generate pseudo-random numbers?",
+  "question": "Which Python library, installable via pip, is used for image read/write operations as covered in the lecture?",
   "options": [
-   "rand",
-   "random",
-   "math",
-   "num"
+   "NumPy",
+   "PIL / Pillow",
+   "OpenCV",
+   "Matplotlib"
   ],
-  "answer": "random"
+  "answer": "PIL / Pillow"
  },
  {
   "id": 81,
   "week": 6,
-  "question": "Which of the following is not a characteristic of Raspberry Pi?",
+  "question": "Which socket_type value is used while creating a TCP/IP socket in Python's socket module?",
   "options": [
-   "Low cost",
-   "High power consumption",
-   "Credit-card size",
-   "Single-board computer"
+   "SOCK_DGRAM",
+   "SOCK_STREAM",
+   "SOCK_RAW",
+   "SOCK_SEQPACKET"
   ],
-  "answer": "High power consumption"
+  "answer": "SOCK_STREAM"
  },
  {
   "id": 82,
   "week": 6,
-  "question": "What type of architecture does the Raspberry Pi processor use?",
+  "question": "How many GPIO pins does the Raspberry Pi 3 Model B have, as shown in the specifications table?",
   "options": [
-   "x86",
-   "MIPS",
-   "ARM",
-   "PowerPC"
+   "26",
+   "32",
+   "40",
+   "44"
   ],
-  "answer": "ARM"
+  "answer": "40"
  },
  {
   "id": 83,
+  "week": 6,
+  "question": "Which of the following is an officially supported operating system for Raspberry Pi mentioned in the lecture?",
+  "options": [
+   "Raspbian",
+   "Windows XP",
+   "macOS",
+   "Solaris"
+  ],
+  "answer": "Raspbian"
+ },
+ {
+  "id": 84,
+  "week": 6,
+  "question": "Raspberry Pi is best described as a:",
+  "options": [
+   "Printer",
+   "Smartphone",
+   "Wi-Fi router",
+   "Single-board computer"
+  ],
+  "answer": "Single-board computer"
+ },
+ {
+  "id": 85,
   "week": 6,
   "question": "Which command is used to install the GPIO library on Raspberry Pi before programming the blinking LED example?",
   "options": [
@@ -996,55 +1020,43 @@ export const iotQuestions: Question[] = [
   "answer": "sudo apt-get install python-rpi.gpio"
  },
  {
-  "id": 84,
-  "week": 6,
-  "question": "Which pin on the Raspberry Pi GPIO header provides a 5V power supply?",
-  "options": [
-   "Pin 1",
-   "Pin 3",
-   "Pin 6",
-   "Pin 2"
-  ],
-  "answer": "Pin 2"
- },
- {
-  "id": 85,
+  "id": 86,
   "week": 6,
   "question": "Where is the CSI camera connector slot located on the Raspberry Pi board?",
   "options": [
-   "Between the Ethernet port and the HDMI port",
    "Between the USB ports",
+   "Between the Ethernet port and the HDMI port",
    "Next to the power supply pin",
    "On the underside of the board"
   ],
   "answer": "Between the Ethernet port and the HDMI port"
  },
  {
-  "id": 86,
+  "id": 87,
   "week": 6,
   "question": "Which terminal command captures a still image using the Raspberry Pi camera?",
   "options": [
-   "raspicam capture",
    "raspistill -o image.jpg",
+   "raspicam capture",
    "pi-camera snap",
    "capture.py --img"
   ],
   "answer": "raspistill -o image.jpg"
  },
  {
-  "id": 87,
+  "id": 88,
   "week": 6,
   "question": "What does DHT stand for in the DHT sensor used with Raspberry Pi in the auto-cooling system?",
   "options": [
-   "Digital Humidity and Temperature",
    "Digital Heat Transfer",
+   "Digital Humidity and Temperature",
    "Direct Hardware Trigger",
    "Dual Humidity Thermostat"
   ],
   "answer": "Digital Humidity and Temperature"
  },
  {
-  "id": 88,
+  "id": 89,
   "week": 6,
   "question": "How many output terminals does the relay used in the temperature-dependent auto-cooling system have, as shown in the lecture?",
   "options": [
@@ -1054,18 +1066,6 @@ export const iotQuestions: Question[] = [
    "5"
   ],
   "answer": "3"
- },
- {
-  "id": 89,
-  "week": 6,
-  "question": "What is the function of the relay module in the temperature-dependent auto-cooling system?",
-  "options": [
-   "Read humidity",
-   "Switch high power devices on or off using low power signals",
-   "Regulate input voltage",
-   "Provide analog output"
-  ],
-  "answer": "Switch high power devices on or off using low power signals"
  },
  {
   "id": 90,

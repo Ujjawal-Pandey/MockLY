@@ -2116,3 +2116,135 @@ Correct answer: (a) True
 All 15 questions for **Week 5: Assignment 5** have been updated in [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 61–75). All single-choice and True/False questions are properly configured for testing and instant feedback.
 
 ---
+
+## 👤 User
+
+Week 6: Assignment 6 — All Questions, Options & Answers
+The four screenshots contain all 15 questions from Week 6. Below is the complete transcription, with the accepted answers shown in your assessment.
+
+Question 1
+What are the five basic data types available in Python, as introduced in the lecture?
+a. Numbers, Strings, List, Tuple, Dictionary
+b. Integer, Float, Boolean, Char, Byte
+c. Array, Struct, Class, Object, Set
+d. Numbers, Strings, Queue, Stack, Graph
+Correct answer: (a) Numbers, Strings, List, Tuple, Dictionary.
+
+Question 2
+Which keyword is used to define a function in Python?
+a. func
+b. def
+c. define
+d. function
+Correct answer: (b) def
+
+Question 3
+In Python's exception handling, which keyword is used to handle an exception raised inside the try block?
+a. catch
+b. except
+c. handle
+d. rescue
+Correct answer: (b) except
+
+Question 4
+Which mode of Python's open() function is used to add data to the end of an existing file without erasing its existing content?
+a. r (read mode)
+b. w (write mode)
+c. a (append mode)
+d. r+ (read and write mode)
+Correct answer: (c) a (append mode)
+
+Question 5
+Which Python library, installable via pip, is used for image read/write operations as covered in the lecture?
+a. NumPy
+b. PIL / Pillow
+c. OpenCV
+d. Matplotlib
+Correct answer: (b) PIL / Pillow
+
+Question 6
+Which socket_type value is used while creating a TCP/IP socket in Python's socket module?
+a. SOCK_DGRAM
+b. SOCK_STREAM
+c. SOCK_RAW
+d. SOCK_SEQPACKET
+Correct answer: (b) SOCK_STREAM
+
+Question 7
+How many GPIO pins does the Raspberry Pi 3 Model B have, as shown in the specifications table?
+a. 26
+b. 32
+c. 40
+d. 44
+Correct answer: (c) 40
+
+Question 8
+Which of the following is an officially supported operating system for Raspberry Pi mentioned in the lecture?
+a. Raspbian
+b. Windows XP
+c. macOS
+d. Solaris
+Correct answer: (a) Raspbian
+
+Question 9
+Raspberry Pi is best described as a:
+a. Printer
+b. Smartphone
+c. Wi-Fi router
+d. Single-board computer
+Correct answer: (d) Single-board computer
+
+Question 10
+Which command is used to install the GPIO library on Raspberry Pi before programming the blinking LED example?
+a. sudo apt-get install python-rpi.gpio
+b. pip install gpio
+c. sudo apt-get install led-lib
+d. npm install rpi-gpio
+Correct answer: (a) sudo apt-get install python-rpi.gpio
+
+Question 11
+Where is the CSI camera connector slot located on the Raspberry Pi board?
+a. Between the USB ports
+b. Between the Ethernet port and the HDMI port
+c. Next to the power supply pin
+d. On the underside of the board
+Correct answer: (b) Between the Ethernet port and the HDMI port.
+
+Question 12
+Which terminal command captures a still image using the Raspberry Pi camera?
+a. raspistill -o image.jpg
+b. raspicam capture
+c. pi-camera snap
+d. capture.py --img
+Correct answer: (a) raspistill -o image.jpg
+
+Question 13
+What does DHT stand for in the DHT sensor used with Raspberry Pi in the auto-cooling system?
+a. Digital Heat Transfer
+b. Digital Humidity and Temperature
+c. Direct Hardware Trigger
+d. Dual Humidity Thermostat
+Correct answer: (b) Digital Humidity and Temperature
+
+Question 14
+How many output terminals does the relay used in the temperature-dependent auto-cooling system have, as shown in the lecture?
+a. 2
+b. 3
+c. 4
+d. 5
+Correct answer: (b) 3
+
+Question 15
+State whether the following statement is True or False.
+Statement: In the temperature-dependent auto-cooling system, the fan operates when the surrounding temperature rises above the threshold value specified in the code.
+a. True
+b. False
+Correct answer: (a) True
+
+---
+
+## 🤖 Assistant
+
+All 15 questions for **Week 6: Assignment 6** have been updated in [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 76–90). All single-choice and True/False questions are properly configured for testing and instant feedback.
+
+---
