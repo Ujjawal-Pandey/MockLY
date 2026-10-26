@@ -549,96 +549,99 @@ export const iotQuestions: Question[] = [
  {
   "id": 46,
   "week": 4,
-  "question": "Which component in a sensor network typically consumes the maximum energy?",
+  "question": "What does the ultrasonic sensor measure generally in the AID system?",
   "options": [
-   "Microcontroller",
-   "Wireless Transceiver",
-   "Memory",
-   "Battery"
+   "Humidity",
+   "Distance of the object",
+   "Soil pH",
+   "Light intensity"
   ],
-  "answer": "Wireless Transceiver"
+  "answer": "Distance of the object"
  },
  {
   "id": 47,
   "week": 4,
-  "question": "The sensor field is defined as:",
+  "question": "Which component processes the data received from the sensors in the AID system?",
   "options": [
-   "The communication channel between sensor nodes",
-   "The geographical area where sensor nodes are deployed",
-   "The memory space inside a sensor node",
-   "The battery unit of a sensor node"
+   "Camera",
+   "NFC tag",
+   "Microcontroller",
+   "Ultrasonic sensor"
   ],
-  "answer": "The geographical area where sensor nodes are deployed"
+  "answer": "Microcontroller"
  },
  {
   "id": 48,
   "week": 4,
-  "question": "Which layer of WSN architecture is responsible for path selection and packet routing?",
+  "question": "How can standard nanodevices communicate?",
   "options": [
-   "Physical Layer",
-   "Data Link Layer",
-   "Network Layer",
-   "Application Layer"
+   "Electromagnetic communication",
+   "Molecular communication",
+   "Wired Ethernet",
+   "ZigBee communication"
   ],
-  "answer": "Network Layer"
+  "answer": "Electromagnetic communication||Molecular communication",
+  "multi": true
  },
  {
   "id": 49,
   "week": 4,
-  "question": "State whether the following statement is True or False: A wireless sensor node can perform sensing, data processing, and wireless communication.",
+  "question": "When does sensing coverage guarantee network connectivity?",
   "options": [
-   "True",
-   "False"
+   "When the transmission range is at least twice the sensing range",
+   "When the sensing range is at least twice the transmission range",
+   "When the transmission and sensing ranges are equal",
+   "When the transmission range is smaller than the sensing range"
   ],
-  "answer": "True"
+  "answer": "When the transmission range is at least twice the sensing range"
  },
  {
   "id": 50,
   "week": 4,
-  "question": "Which of the following is NOT a characteristic of WSNs?",
+  "question": "Which of the following is a coverage problem in a static WSN?",
   "options": [
-   "Low power consumption requirement",
-   "High storage capacity on every node",
-   "Self-organizing capability",
-   "Dynamic network topology"
+   "Area coverage",
+   "Data compression",
+   "Route encryption",
+   "Clock synchronization"
   ],
-  "answer": "High storage capacity on every node"
+  "answer": "Area coverage"
  },
  {
   "id": 51,
   "week": 4,
-  "question": "Multi-hop communication in WSNs helps in:",
+  "question": "Which reporting method is used for forest-fire monitoring in a WSN?",
   "options": [
-   "Increasing transmission power of nodes",
-   "Reducing overall energy consumption",
-   "Eliminating the need for a Sink node",
-   "Increasing network latency significantly"
+   "Event-driven reporting",
+   "On-demand reporting",
+   "Manual reporting",
+   "Location-based reporting"
   ],
-  "answer": "Reducing overall energy consumption"
+  "answer": "Event-driven reporting"
  },
  {
   "id": 52,
   "week": 4,
-  "question": "In WSN data dissemination, data is transferred from:",
+  "question": "What does a data mule do?",
   "options": [
-   "Sink to Source nodes only",
-   "Source nodes to Sink node",
-   "Sensor nodes to actuators only",
-   "Gateway to Internet only"
+   "Replaces all sensor nodes",
+   "Measures only temperature",
+   "Collects data and carries it to the sink",
+   "Repairs damaged hardware"
   ],
-  "answer": "Source nodes to Sink node"
+  "answer": "Collects data and carries it to the sink"
  },
  {
   "id": 53,
   "week": 4,
-  "question": "What happens when a mobile node in a wireless sensor network moves?",
+  "question": "What may happen if a critical stationary sensor node fails?",
   "options": [
-   "The network topology may change",
+   "The network may be partitioned",
    "All nodes become mobile",
    "The sensing range doubles",
    "The network repairs itself by movement"
   ],
-  "answer": "The network topology may change"
+  "answer": "The network may be partitioned"
  },
  {
   "id": 54,

@@ -1855,3 +1855,134 @@ Correct answer: (b) It drops a received packet instead of forwarding it.
 All 15 questions for **Week 3: Assignment 3** have been updated in [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 31–45). All single and multiple-select options have been verified and configured for instant feedback, grading, and testing.
 
 ---
+
+## 👤 User
+
+Week 4: Assignment 4 — All Questions, Options & Answers
+The screenshots contain Questions 1–15. Below is the full transcription, including all options and the accepted answers shown in the assessment.
+
+Question 1
+What does the ultrasonic sensor measure generally in the AID system?
+a. Humidity
+b. Distance of the object
+c. Soil pH
+d. Light intensity
+Correct answer: (b) Distance of the object
+
+Question 2
+Which component processes the data received from the sensors in the AID system?
+a. Camera
+b. NFC tag
+c. Microcontroller
+d. Ultrasonic sensor
+Correct answer: (c) Microcontroller
+
+Question 3
+How can standard nanodevices communicate? (Multiple correct answers)
+a. Electromagnetic communication
+b. Molecular communication
+c. Wired Ethernet
+d. ZigBee communication
+Correct answers: (a), (b)
+
+Question 4
+When does sensing coverage guarantee network connectivity?
+a. When the transmission range is at least twice the sensing range
+b. When the sensing range is at least twice the transmission range
+c. When the transmission and sensing ranges are equal
+d. When the transmission range is smaller than the sensing range
+Correct answer: (a) When the transmission range is at least twice the sensing range.
+
+Question 5
+Which of the following is a coverage problem in a static WSN?
+a. Area coverage
+b. Data compression
+c. Route encryption
+d. Clock synchronization
+Correct answer: (a) Area coverage
+
+Question 6
+Which reporting method is used for forest-fire monitoring in a WSN?
+a. Event-driven reporting
+b. On-demand reporting
+c. Manual reporting
+d. Location-based reporting
+Correct answer: (a) Event-driven reporting
+
+Question 7
+What does a data mule do?
+a. Replaces all sensor nodes
+b. Measures only temperature
+c. Collects data and carries it to the sink
+d. Repairs damaged hardware
+Correct answer: (c) Collects data and carries it to the sink.
+
+Question 8
+What may happen if a critical stationary sensor node fails?
+a. The network may be partitioned
+b. All nodes become mobile
+c. The sensing range doubles
+d. The network repairs itself by movement
+Correct answer: (a) The network may be partitioned.
+
+Question 9
+A person who provides sensing information acts as a:
+a. Router
+b. Radio channel
+c. Actuator
+d. Data source
+Correct answer: (d) Data source
+
+Question 10
+Which is an advantage of a stationary wireless sensor network?
+a. Easy topology maintenance
+b. Automatic movement after node failure
+c. Continuously changing topology
+d. Unpredictable sensor locations
+Correct answer: (a) Easy topology maintenance
+
+Question 11
+State whether the following statement is True or False.
+Statement: In a UAV network, the network topology may change frequently because the UAVs are mobile.
+a. True
+b. False
+Correct answer: (a) True
+
+Question 12
+Which is a common issue in UAV networks?
+a. Frequent topology changes
+b. Fixed relative positions
+c. Permanent communication links
+d. No possibility of UAV failure
+Correct answer: (a) Frequent topology changes
+
+Question 13
+Compared with traditional SCADA, M2M supports:
+a. Only isolated systems
+b. No device communication
+c. Continuous human control
+d. Cross-platform integration
+Correct answer: (d) Cross-platform integration
+
+Question 14
+State whether the following statement is True or False.
+Statement: In a stationary wireless sensor network, sensor nodes can automatically move to restore connectivity after a node failure.
+a. True
+b. False
+Correct answer: (b) False
+
+Question 15
+Which statement best describes M2M communication?
+a. Devices can exchange data without direct human control
+b. Every data exchange must be performed manually
+c. Only one device can communicate at a time
+d. Devices cannot communicate through a network
+Correct answer: (a) Devices can exchange data without direct human control.
+
+---
+
+## 🤖 Assistant
+
+All 15 questions for **Week 4: Assignment 4** have been updated in [src/data/iot-questions.ts](file:///Users/ujjawalpandey/Downloads/mockly-main/src/data/iot-questions.ts) (IDs 46–60). All single and multiple-select options have been verified and configured for instant feedback, grading, and testing.
+
+---
