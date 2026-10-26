@@ -5,8 +5,6 @@ import { supabase } from "@/integrations/supabase/client";
 import {
   buildAttempt,
   ShuffledQuestion,
-  TEST_SIZE,
-  SINGLE_WEEK_SIZE,
   getAvailableWeeks,
   poolForWeeks,
 } from "@/lib/test-utils";
@@ -46,8 +44,20 @@ type AttemptConfig = {
 };
 
 const SUBJECTS = {
-  ma: { title: "Marketing Analytics", questions: maQuestions, storageKey: "nptel-attempted-ids" },
-  iot: { title: "Introduction to Internet of Things", questions: iotQuestions, storageKey: "nptel-iot-attempted-ids" },
+  ma: {
+    title: "Marketing Analytics",
+    questions: maQuestions,
+    storageKey: "nptel-attempted-ids",
+    testSize: 20,
+    singleWeekSize: 10,
+  },
+  iot: {
+    title: "Introduction to Internet of Things",
+    questions: iotQuestions,
+    storageKey: "nptel-iot-attempted-ids",
+    testSize: 30,
+    singleWeekSize: 15,
+  },
 } as const;
 type SubjectId = keyof typeof SUBJECTS;
 
@@ -73,6 +83,8 @@ const Index = () => {
       questions={cfg.questions}
       storageKey={cfg.storageKey}
       onSubject={setSubject}
+      testSize={cfg.testSize}
+      singleWeekSize={cfg.singleWeekSize}
     />
   );
 };
@@ -82,11 +94,15 @@ const CourseApp = ({
   questions,
   storageKey,
   onSubject,
+  testSize,
+  singleWeekSize,
 }: {
   subject: SubjectId;
   questions: Question[];
   storageKey: string;
   onSubject: (s: SubjectId) => void;
+  testSize: number;
+  singleWeekSize: number;
 }) => {
   const [stage, setStage] = useState<Stage>("home");
   const [attempt, setAttempt] = useState<ShuffledQuestion[]>([]);
@@ -118,16 +134,17 @@ const CourseApp = ({
 
   const start = (config: AttemptConfig) => {
     let pool: ReturnType<typeof poolForWeeks> | undefined;
-    let size = TEST_SIZE;
+    let size = testSize;
 
     if (config.mode === "unattempted") {
       pool = questions.filter((q) => !attemptedIds.includes(q.id));
+      size = Math.min(testSize, pool.length);
     } else if (config.mode === "single-week" && config.week != null) {
       pool = poolForWeeks(questions, [config.week]);
-      size = Math.min(SINGLE_WEEK_SIZE, pool.length);
+      size = Math.min(singleWeekSize, pool.length);
     } else if (config.mode === "multi-week" && config.weeks?.length) {
       pool = poolForWeeks(questions, config.weeks);
-      size = Math.min(TEST_SIZE, pool.length);
+      size = Math.min(testSize, pool.length);
     }
 
     if (size <= 0) return;
@@ -218,12 +235,12 @@ const CourseApp = ({
 
   const startLabel = (() => {
     if (selectorMode === "single-week")
-      return `Start single-week test (${Math.min(SINGLE_WEEK_SIZE, singlePoolSize)} Qs)`;
+      return `Start single-week test (${Math.min(singleWeekSize, singlePoolSize)} Qs)`;
     if (selectorMode === "multi-week")
-      return `Start custom test (${Math.min(TEST_SIZE, multiPoolSize)} Qs)`;
+      return `Start custom test (${Math.min(testSize, multiPoolSize)} Qs)`;
     if (selectorMode === "unattempted")
-      return `Practice unattempted (${Math.min(TEST_SIZE, unattemptedCount)} Qs)`;
-    return `Start a new mock test (${TEST_SIZE} Qs)`;
+      return `Practice unattempted (${Math.min(testSize, unattemptedCount)} Qs)`;
+    return `Start a new mock test (${testSize} Qs)`;
   })();
 
   return (
@@ -270,7 +287,7 @@ const CourseApp = ({
               onClick={() => start({ mode: "random" })}
               className="text-base"
             >
-              Quick start ({TEST_SIZE} Qs)
+              Quick start ({testSize} Qs)
             </Button>
             <Button
               size="lg"
@@ -294,9 +311,9 @@ const CourseApp = ({
 
           <div className="grid sm:grid-cols-3 gap-3 mb-6">
             {([
-              { id: "random", icon: Shuffle, title: "Full Random", desc: `${TEST_SIZE}Q from all weeks` },
-              { id: "single-week", icon: CalendarDays, title: "Single Week", desc: `${SINGLE_WEEK_SIZE}Q from one week` },
-              { id: "multi-week", icon: Layers, title: "Multi-Week Custom", desc: `${TEST_SIZE}Q from chosen weeks` },
+              { id: "random", icon: Shuffle, title: "Full Random", desc: `${testSize}Q from all weeks` },
+              { id: "single-week", icon: CalendarDays, title: "Single Week", desc: `All ${singleWeekSize}Q from one week` },
+              { id: "multi-week", icon: Layers, title: "Multi-Week Custom", desc: `${testSize}Q from chosen weeks` },
             ] as const).map((opt) => {
               const active = selectorMode === opt.id;
               return (
@@ -340,9 +357,9 @@ const CourseApp = ({
               </Select>
               <p className="text-xs text-muted-foreground">
                 Selected pool size: {singlePoolSize} questions ·
-                Test length: {Math.min(SINGLE_WEEK_SIZE, singlePoolSize)} Qs
-                {singlePoolSize < SINGLE_WEEK_SIZE && singlePoolSize > 0 && (
-                  <span className="text-destructive"> · fewer than {SINGLE_WEEK_SIZE} available</span>
+                Test length: {Math.min(singleWeekSize, singlePoolSize)} Qs
+                {singlePoolSize < singleWeekSize && singlePoolSize > 0 && (
+                  <span className="text-destructive"> · fewer than {singleWeekSize} available</span>
                 )}
               </p>
             </div>
@@ -381,9 +398,9 @@ const CourseApp = ({
               </div>
               <p className="text-xs text-muted-foreground">
                 Selected pool size: {multiPoolSize} questions ·
-                Test length: {Math.min(TEST_SIZE, multiPoolSize)} Qs
-                {multiPoolSize > 0 && multiPoolSize < TEST_SIZE && (
-                  <span className="text-destructive"> · fewer than {TEST_SIZE} available</span>
+                Test length: {Math.min(testSize, multiPoolSize)} Qs
+                {multiPoolSize > 0 && multiPoolSize < testSize && (
+                  <span className="text-destructive"> · fewer than {testSize} available</span>
                 )}
               </p>
             </div>
